@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@100;300;500;700&family=Oswald:wght@200;300;500&display=swap');
+/* FONTS */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .slide {
+        @apply before:bg-premiumColor before:absolute before:w-[100%] before:h-[100%]
+    }
+
+    .overlay {
+        @apply transition-all duration-[.8s]
+    }
+
+    .overlay.overlay-active {
+        @apply h-full lg:hidden
+    }
+
+    .dropdown-trigger {
+        @apply uppercase
+    }
+
+    .dropdown>.dropping-menu,
+    .dropdown-second>.dropping-menu,
+    .dropdown-third>.dropping-menu,
+    .dropdown-fourth>.dropping-menu {
+        @apply invisible absolute duration-[.1s] translate-y-2 h-[6.25rem] overflow-hidden capitalize bg-gray-100 top-12 rounded-md opacity-0
+    }
+
+    .dropdown>.drop-menu,
+    .dropdown-second>.drop-menu,
+    .dropdown-third>.drop-menu,
+    .dropdown-fourth>.drop-menu {
+        @apply visible opacity-100
+    }
+
+    .dropdown>.dropping-menu {
+        @apply w-[8.75rem]
+    }
+
+    .dropdown-second>.dropping-menu {
+        @apply w-[11.25rem]
+    }
+
+    .dropdown-third>.dropping-menu {
+        @apply w-[9.375rem]
+    }
+
+    .dropdown-fourth>.dropping-menu {
+        @apply w-[11.25rem]
+    }
+
+    .my-custom-btn {
+        @apply px-8 py-4 z-50 border-[1px] transition-colors mb-20
+    }
+
+    .header-btn {
+        @apply text-gray-100 border-gray-100 hover:bg-gray-100 hover:text-black rounded-full
+    }
+
+    .header-content {
+        @apply flex flex-col items-center justify-center h-screen text-white text-center
+    }
+
+    .search-area {
+        @apply opacity-0 invisible fixed left-0 top-0 h-32 overflow-x-hidden z-50 w-full items-center flex text-black transition-opacity duration-[.3s]
+    }
+
+    .search-input {
+        @apply w-full h-32 sm:pl-10 mm:pl-6 text-black outline-none sm:text-3xl mm:text-2xl font-gloockFont
+    }
+
+    .search-area.visibl {
+        @apply opacity-100 visible focus:bg-red-400
+    }
+
+    .login-btn {
+        @apply bg-blue-800 hover:brightness-125 text-white border-blue-800 rounded-lg mt-8
+    }
+
+    .login-box {
+        @apply flex flex-col items-center justify-center fixed bg-slate-900/90 inset-0 opacity-100 transition-all duration-700
+    }
+
+    .account-box-register {
+        @apply invisible
+    }
+
+    .account-box-register.account-box-register-visible {
+        @apply visible
+    }
+
+    .course-box {
+        @apply before:bg-[rgb(10,10,10,.5)] before:absolute before:w-[300px] before:h-[166px] before:rounded-md 
+        hover:before:bg-premiumColor/70 hover:-translate-y-2 transition-all duration-[.4s]
+    }
+
+    .view-course-btn {
+        @apply rounded-full mt-[5rem] mb-0 border-solid border-[1px] border-premiumColor
+         hover:border-premiumColor/0 text-premiumColor hover:bg-premiumColor hover:text-white
+    }
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+    }
+
+    .online-learning {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678010582/Course%20bg%20images%20for%20Edumy/online-learning-img_rscqng.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+
 }

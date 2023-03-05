@@ -1,0 +1,50 @@
+[
+    {
+        "course_id": 1,
+        "course_head": "Dizayn",
+        "course_detail": "800-dən çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678000212/Course%20bg%20images%20for%20Edumy/course-1_ctqdju.jpg"
+    },
+    {
+        "course_id": 2,
+        "course_head": "Biznes",
+        "course_detail": "1400-dən çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678000953/Course%20bg%20images%20for%20Edumy/2_d4nov9.jpg"
+    },
+    {
+        "course_id": 3,
+        "course_head": "Proqram təminatının inkişafı",
+        "course_detail": "350-dən çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001148/Course%20bg%20images%20for%20Edumy/3_igyfar.jpg"
+    },
+    {
+        "course_id": 4,
+        "course_head": "Web proqramlaşdırma",
+        "course_detail": "640-dan çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001223/Course%20bg%20images%20for%20Edumy/4_kpnxoc.jpg"
+    },
+    {
+        "course_id": 5,
+        "course_head": "Fotoqrafiya",
+        "course_detail": "740-dan çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001252/Course%20bg%20images%20for%20Edumy/5_dzul8u.jpg"
+    },
+    {
+        "course_id": 6,
+        "course_head": "Audio və Musiqi",
+        "course_detail": "120-dən çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001300/Course%20bg%20images%20for%20Edumy/6_z5lef9.jpg"
+    },
+    {
+        "course_id": 7,
+        "course_head": "Marketinq",
+        "course_detail": "200-dən çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001343/Course%20bg%20images%20for%20Edumy/7_lfzkk4.jpg"
+    },
+    {
+        "course_id": 8,
+        "course_head": "Dizayn",
+        "course_detail": "900-dan çox kurs",
+        "course_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678001365/Course%20bg%20images%20for%20Edumy/8_mbbdia.jpg"
+    }
+]
