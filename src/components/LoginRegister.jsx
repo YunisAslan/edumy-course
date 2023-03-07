@@ -4,7 +4,9 @@ import Button from './Button';
 
 import { RxCross1 } from "react-icons/rx";
 
-const LoginRegister = ({setSignBox, signBox}) => {
+import { motion } from 'framer-motion'
+
+const LoginRegister = ({ setSignBox, signBox }) => {
 
     const accountBoxRef = useRef();
     const registerBoxRef = useRef();
@@ -31,7 +33,14 @@ const LoginRegister = ({setSignBox, signBox}) => {
 
             <div className='login-box'>
 
-                <div ref={accountBoxRef} className='account-box-login flex flex-col fixed'>
+                <motion.div
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{duration: .3}}
+                    layout
+                    ref={accountBoxRef}
+                    className='account-box-login flex flex-col fixed'>
 
                     <div className="account-box bg-gray-100 px-10 pt-8 rounded-md">
 
@@ -68,9 +77,16 @@ const LoginRegister = ({setSignBox, signBox}) => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div ref={registerBoxRef} className="account-box-register fixed flex">
+                <motion.div
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{duration: .6}}
+                    layout
+                    ref={registerBoxRef}
+                    className="account-box-register fixed flex">
 
                     <div className="account-box bg-gray-100 lg:px-10 mm:px-14 pt-12 rounded-md">
 
@@ -104,7 +120,7 @@ const LoginRegister = ({setSignBox, signBox}) => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
 
             </div>
 

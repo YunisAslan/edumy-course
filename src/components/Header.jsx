@@ -23,14 +23,14 @@ import hicon4 from '../assets/images/hicon4.png'
 const Header = () => {
     return (
         <>
-            <header>
+            <header className='overflow-x-hidden'>
 
                 <Swiper
                     style={{
                         "--swiper-navigation-color": "#fff"
                     }}
                     speed={2000}
-                    parallax={true}
+                    // parallax={true}
                     navigation={true}
                     loop={true}
                     modules={[Parallax, Navigation, EffectCreative]}

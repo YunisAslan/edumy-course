@@ -96,30 +96,74 @@
     }
 
     .course-box {
-        @apply before:bg-[rgb(10,10,10,.5)] before:absolute before:w-[300px] before:h-[166px] before:rounded-md 
-        hover:before:bg-premiumColor/70 hover:-translate-y-2 transition-all duration-[.4s]
+        @apply before:bg-gray-300 before:absolute before:w-[300px] before:h-[166px] before:rounded-md hover:before:bg-premiumColor/70 hover:before:bg-clip-content hover:-translate-y-2 before:bg-clip-text 
     }
 
     .view-course-btn {
-        @apply rounded-full mt-[5rem] mb-0 border-solid border-[1px] border-premiumColor
-         hover:border-premiumColor/0 text-premiumColor hover:bg-premiumColor hover:text-white
+        @apply rounded-full mt-[5rem] mb-0 border-solid border-[1px] border-premiumColor hover:border-premiumColor/0 text-premiumColor hover:bg-premiumColor hover:text-white
     }
 
+    .start-now-btn {
+        @apply rounded-full mb-0 hover:bg-white hover:text-black font-[700] hover:text-premiumColor mt-7
+    }
+
+    .btn.active {
+        @apply relative before:h-[2px] before:absolute before:w-full before:left-0 before:-bottom-1 before:bg-premiumColor
+    }
 }
 
 @layer base {
     body {
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    h1,
+    h2,
+    h3,
+    h6 {
+        z-index: 1;
+    }
+
+    .course-box,
+    .course-box:hover {
+        transition: box-shadow,color,transform .3s ease-in-out;
+    }
+
+    .browse-course-box {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -15px,
+            rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+    }
+    .browse-course-box:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px -15px,
+            rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
+            transition: box-shadow,color .3s ease-in-out;
     }
 
     .online-learning {
         background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678010582/Course%20bg%20images%20for%20Edumy/online-learning-img_rscqng.jpg');
         background-size: cover;
         background-position: center;
+        transition: background-attachment 5s ease-out;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        height: 50vh;
+        height: 70vh;
     }
 
+    .online-learning::before {
+        content: '';
+        background-color: rgba(25, 38, 117, 0.7);
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .testimonial-swiper img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 66px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -15px,
+            rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+    } 
 }

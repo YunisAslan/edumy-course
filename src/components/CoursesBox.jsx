@@ -9,8 +9,8 @@ const CoursesBox = ({ courseHead, courseDetail, courseImg }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
             }}>
-                <h2 className='z-[1] text-[1.1rem] font-[700]'>{courseHead}</h2>
-                <h3 className='z-[1]'>{courseDetail}</h3>
+                <h2 className='text-lg font-[700]'>{courseHead}</h2>
+                <h3>{courseDetail}</h3>
             </div>
         </>
     )

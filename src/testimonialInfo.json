@@ -1,0 +1,38 @@
+[
+    {
+        "testimonial_id": 1,
+        "testimonial_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678158549/Course%20bg%20images%20for%20Edumy/1_zzfzvu.jpg",
+        "testimonial_name": "Nihad Abbasov",
+        "testimonial_client": "Müştəri",
+        "testimonial_detail": "Artıq bir neçə aydır ki, bu onlayn təhsil saytından istifadə edirəm və əminliklə deyə bilərəm ki, bu, mənim üçün çox şeyi dəyişdirdi."
+    },
+    {
+        "testimonial_id": 2,
+        "testimonial_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678158376/Course%20bg%20images%20for%20Edumy/2_f37i6o.jpg",
+        "testimonial_name": "Elvin Məmmədov",
+        "testimonial_client": "Müştəri",
+        "testimonial_detail": "Məşğul bir mütəxəssis kimi təhsilimi davam etdirmək üçün vaxtım olduğunu düşünmürdüm, lakin bu onlayn təhsil saytı bunu mümkün etdi."
+    },
+    {
+        "testimonial_id": 3,
+        "testimonial_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678158107/Course%20bg%20images%20for%20Edumy/4_lzt510.jpg",
+        "testimonial_name": "Aysel Əliyeva",
+        "testimonial_client": "Müştəri",
+        "testimonial_detail": "Əvvəlcə onlayn təhsil mövzusunda tərəddüd etdim, lakin bu sayt gözləntilərimi aşdı."
+    },
+    {
+        "testimonial_id": 4,
+        "testimonial_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678158267/Course%20bg%20images%20for%20Edumy/30913_nzk2ig.jpg",
+        "testimonial_name": "Orxan Hüseynov",
+        "testimonial_client": "Müştəri",
+        "testimonial_detail": "Bu onlayn təhsil saytı pandemiya zamanı tam bir xilaskar olmuşdur."
+    },
+    {
+        "testimonial_id": 5,
+        "testimonial_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678158430/Course%20bg%20images%20for%20Edumy/3_jiysv5.jpg",
+        "testimonial_name": "Rüfət Alızadə",
+        "testimonial_client": "Müştəri",
+        "testimonial_detail": "İndiyə qədər öyrəndiyim sahələrdə əhəmiyyətli bir irəliləyiş gördüm və bu platformadan öyrənməyə davam etmək üçün həyəcanlıyam :)"
+    }
+    
+]

@@ -150,7 +150,7 @@ const Navbar = () => {
                 </nav>
 
                 <button
-                    className='absolute justify-center w-full mt-2 flex items-center text-white' onClick={() => setSignBox(!signBox)}>
+                    className='absolute justify-center w-full mt-3 flex items-center text-white' onClick={() => setSignBox(!signBox)}>
                     <span className='overlay-sign-btn flex items-center' onClick={handleSign}>
                         <RxPerson className='pointer-events-none text-2xl mr-2' />
                         Daxil ol/Qeydiyyatdan keç
