@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678850257/Course%20bg%20images%20for%20Edumy/1_tyddri.png",
+        "shop_price": "70",
+        "shop_title": "SEO hiylələri",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "23"
+    },
+    {
+        "id": 2,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678863319/Course%20bg%20images%20for%20Edumy/2_ybt0tw.png",
+        "shop_price": "55",
+        "shop_title": "Həyatını dizayn et",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "16"
+    },
+    {
+        "id": 3,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678863302/Course%20bg%20images%20for%20Edumy/3_cuwb8t.png",
+        "shop_price": "96",
+        "shop_title": "Daha asan öyrənmək",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "12"
+    },
+    {
+        "id": 4,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678863333/Course%20bg%20images%20for%20Edumy/4_z09qzx.png",
+        "shop_price": "65",
+        "shop_title": "Texnologiya daim inkişafda",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "15"
+    },
+    {
+        "id": 5,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678863352/Course%20bg%20images%20for%20Edumy/5_c7v4tq.png",
+        "shop_price": "75",
+        "shop_title": "Sənin karyeran",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "12"
+    },
+    {
+        "id": 6,
+        "shop_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678863333/Course%20bg%20images%20for%20Edumy/4_z09qzx.png",
+        "shop_price": "65",
+        "shop_title": "İngiliscə öyrən",
+        "shop_star1": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star2": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
+        "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
+        "shop_rating": "27"
+    }
+]

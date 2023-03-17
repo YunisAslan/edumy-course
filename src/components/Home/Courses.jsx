@@ -1,8 +1,9 @@
 import React from 'react'
 
-import Button from './Button'
+import Button from '../main/Button'
 import CoursesBox from './CoursesBox'
-import coursesInfo from '../coursesInfo.json'
+import coursesInfo from '../../JSONs/coursesInfo.json'
+import OnlineLearning from './OnlineLearning'
 
 
 const Courses = () => {
@@ -10,7 +11,7 @@ const Courses = () => {
         <>
             <section className='courses-section mt-[5rem] mb-[10rem]'>
                 <div className="courses-head text-center pb-10">
-                    <h2 className='text-[1.6rem] font-[700] pb-1'>Kurs kateqoriyaları</h2>
+                    <h2 className='text-[1.7rem] font-[500] pb-1 capitalize'>Kurs kateqoriyaları</h2>
                     <h6 className='px-5'>Güclü təməl üçün bizim kursları seçməlisiniz</h6>
                 </div>
 
@@ -24,21 +25,12 @@ const Courses = () => {
                     }
                 </div>
 
-                <div className='flex justify-center font-[700]'>
+                <div className='flex justify-center font-[500]'>
                     <Button btnText="Bütün Kurslara Baxın" classname="my-custom-btn view-course-btn" />
                 </div>
 
 
-                <div className="online-learning mt-10 uppercase text-white text-center flex flex-col justify-center z-[999]">
-                    <h6>Onlayn öyrənməyə başla</h6>
-                    <h2 className='px-2 pt-2 sm:text-[2.5rem] mm:text-[2rem] font-[700]'>Ən yaxşı onlayn kurslarla <br /> bacarıqlarınızı artırın</h2>
-
-                    <div className='z-[1]'>
-                        <Button btnText="İndi başla" classname="my-custom-btn start-now-btn" />
-                    </div>
-                </div>
-
-
+                <OnlineLearning /> {/*HAVE pARALLAX IMAGE */}
 
             </section>
         </>

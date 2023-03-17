@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import testimonialInfo from '../testimonialInfo.json'
+import testimonialInfo from '../../JSONs/testimonialInfo.json'
 import TestimonialContainer from './TestimonialContainer';
 //SWIPERJS
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,9 +15,9 @@ const Testimonials = () => {
         <>
             <section className="testimonials-section mb-[10rem]">
 
-                <div className="testimonial-head text-center pb-10">
-                    <h2 className='font-[700] text-[1.6rem] pb-1'>İnsanlar Nə Deyir</h2>
-                    <h6>Saytın ekspert müəllimləri dünya səviyyəli təhsil təqdim edir.</h6>
+                <div className="testimonial-head text-center pb-10 px-6">
+                    <h2 className='font-[500] text-[1.7rem] pb-1'>İnsanlar Nə Deyir</h2>
+                    <h6>Saytın ekspert müəllimləri dünya səviyyəli təhsil təqdim edir</h6>
                 </div>
 
                 <Swiper

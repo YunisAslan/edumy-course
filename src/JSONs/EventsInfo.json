@@ -1,0 +1,69 @@
+[
+    {
+        "event_id": 1,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678764366/Course%20bg%20images%20for%20Edumy/pexels-photo-5763335_yaqjna.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    },
+    {
+        "event_id": 2,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678763777/Course%20bg%20images%20for%20Edumy/el2_ghiu1y.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    },
+    {
+        "event_id": 3,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678763809/Course%20bg%20images%20for%20Edumy/el3_abntlv.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    },
+    {
+        "event_id": 4,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678763857/Course%20bg%20images%20for%20Edumy/el4_zxyyaf.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    },
+    {
+        "event_id": 5,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678764114/Course%20bg%20images%20for%20Edumy/pexels-photo-8349431_cqvxgc.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    },
+    {
+        "event_id": 6,
+        "event_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678734498/Course%20bg%20images%20for%20Edumy/el1_jskuc5.jpg",
+        "event_img_date": "28",
+        "event_img_month": "Aprel",
+        "event_title": "Hər şey öyrədilə bilir",
+        "event_detail": "Potensialınızın kilidini açın, hər kəs üçün öyrənmə fürsətləri",
+        "event_date": "06.06.2023 - 12.7.2023",
+        "event_time": "08:00 - 12:00",
+        "event_address": "28 may küçəsi"
+    }
+
+]

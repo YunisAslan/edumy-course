@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 
 // LOGO
-import headerLogo from '../assets/images/header-logo.png'
+import headerLogo from '../../assets/images/header-logo.png'
 
 //ICONS
 import { RxPerson, RxCross1 } from "react-icons/rx";
@@ -10,9 +10,14 @@ import { BsSearch } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { HiBars2 } from "react-icons/hi2";
 
-import LoginRegister from './LoginRegister';
+import { Link } from 'react-router-dom';
+import { useNavigate, useMatch } from "react-router-dom";
+
 
 const Navbar = () => {
+
+
+    const navigate = useNavigate();
 
     const overlayRef = useRef()
     const searchInputRef = useRef();
@@ -20,7 +25,6 @@ const Navbar = () => {
     const [openTwo, setOpenTwo] = useState(false)
     const [openThird, setOpenThird] = useState(false)
     const [openFourth, setOpenFourth] = useState(false)
-    const [signBox, setSignBox] = useState(false)
 
     const handleOverlay = e => {
         if (e.target.classList.contains('cross-overlay')) {
@@ -46,11 +50,19 @@ const Navbar = () => {
         }
     }
 
+    //hide navbar Login page
+
+    const match = useMatch('/login');
+
+    if (match) {
+        return null; // hide navbar on LoginPage
+    }
+
     return (
         <>
             {/* Overlay navbar */}
-            <div ref={overlayRef} className="overlay fixed top-0 bg-gray-800 left-0 w-screen h-0  z-[99] overflow-hidden">
-               
+            {/* <div ref={overlayRef} className="overlay fixed top-0 bg-gray-800 left-0 w-[100%] h-0  z-[99] overflow-hidden">
+
                 <button className='cross-overlay text-gray-100 text-[2rem] absolute right-10 top-10' onClick={handleOverlay}>
                     <RxCross1 className='pointer-events-none' />
                 </button>
@@ -150,31 +162,33 @@ const Navbar = () => {
                 </nav>
 
                 <button
-                    className='absolute justify-center w-full mt-3 flex items-center text-white' onClick={() => setSignBox(!signBox)}>
+                    className='absolute justify-center w-full mt-3 flex items-center text-white'
+                    onClick={() => navigate('/login')}>
                     <span className='overlay-sign-btn flex items-center' onClick={handleSign}>
                         <RxPerson className='pointer-events-none text-2xl mr-2' />
-                        Daxil ol/Qeydiyyatdan keç
+                        Daxil ol
                     </span>
                 </button>
-            </div>
+            </div> */}
 
-            <div className="navbar absolute top-0 z-50 text-white flex justify-between w-screen items-center mm:pl-9  mm:pr-14 lg:px-14 mt-8">
+            <div className="navbar absolute top-0 z-50 text-gray-50 flex justify-between w-[100%] items-center mm:pl-9  mm:pr-14 lg:px-14 pt-8">
 
                 {/* overlay bars */}
-                <button className='bars-overlay text-[2.5rem] absolute right-7 top-1 mm:flex lg:hidden' onClick={handleOverlay}>
+                <button className='bars-overlay text-[2.5rem] absolute pt-8 right-7 top-1 mm:flex lg:hidden' onClick={handleOverlay}>
                     <HiBars2 className='pointer-events-none' />
                 </button>
 
-                <div className="navbar-logo flex items-center mr-9">
+                <div className="navbar-logo flex items-center pr-9">
                     <img src={headerLogo} alt="" />
                     <span className='pl-4 text-[1.5rem]'>EDUMY</span>
                 </div>
 
                 <nav className='nav-links uppercase font-navbarFont font-[200] flex-1 text-[1.375rem] space-x-6 flex xl:flex mm:hidden'>
 
-                    <a href="" className='flex items-center tracking-wide'>Ana Səhifə</a>
+                    <Link to='/' className='flex items-center tracking-wide'>Ana Səhİfə</Link>
 
                     <div className="dropdown relative" onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
+
                         <button className='dropdown-trigger flex items-center py-3 tracking-wide'>
                             Kurslar <RiArrowDropDownLine />
                         </button>
@@ -183,16 +197,16 @@ const Navbar = () => {
 
                             <ul className='drop-links flex flex-col justify-center h-[100%] font-[300]'>
                                 <li>
-                                    <a href=""
+                                    <Link to="/courses"
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
                                         Kurslar
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href=""
+                                    <Link to="/instructors"
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
                                         Təlimçilər
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -207,16 +221,16 @@ const Navbar = () => {
 
                             <ul className='drop-links flex flex-col justify-center h-[100%] font-[300]'>
                                 <li>
-                                    <a href=""
+                                    <Link to="/eventslist"
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
                                         Tədbirlər Siyahısı
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href=""
+                                    <Link to='/event'
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
                                         Tədbir
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -231,16 +245,28 @@ const Navbar = () => {
 
                             <ul className='drop-links flex flex-col justify-center h-[100%] font-[300]'>
                                 <li>
-                                    <a href=""
+                                    <Link to="/shop"
                                         className='block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
                                         Mağaza
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href=""
+                                    <Link to="/aboutus"
                                         className='block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
-                                        Giriş et
-                                    </a>
+                                        Haqqımızda
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/faq"
+                                        className='block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
+                                        Faq
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/login"
+                                        className='block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
+                                        Daxil ol
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -254,37 +280,36 @@ const Navbar = () => {
 
                             <ul className='drop-links flex flex-col justify-center h-[100%] font-[300]'>
                                 <li>
-                                    <a href=""
+                                    <Link to="/bloglist"
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
-                                        Mağaza
-                                    </a>
+                                        Bloglar Siyahısı
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href=""
+                                    <Link to="/blog"
                                         className='inline-block pl-3 text-black hover:translate-x-3 transition-transform duration-700'>
-                                        Giriş et
-                                    </a>
+                                        Blog
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
 
-                    <a href="" className='flex items-center tracking-wide'>Əlaqə</a>
+                    <Link to="/contact" className='flex items-center tracking-wide'>Əlaqə</Link>
                 </nav>
 
-                <div className="navbar-right flex ml-2">
+                <div className="navbar-right flex items-center">
 
-                    <button className='sign-btn text-[1.8rem] flex items-center  mm:hidden lg:flex' onClick={() => setSignBox(!signBox)}>
-                        <RxPerson className='pointer-events-none' />
-                        <small className='text-[.9rem] pl-2'>Daxil ol / Qeydiyyatdan keç</small>
+                    <button className='sign-btn flex items-center px-3 py-2 mr-[2rem] rounded-md  mm:hidden lg:flex'
+                        onClick={() => navigate('/login')}>
+                        <RxPerson className='pointer-events-none text-[1.4rem]' />
+                        <small className='text-[.9rem] pl-2'>Daxil ol</small>
                     </button>
 
 
-                    {signBox && <LoginRegister setSignBox={setSignBox} signBox={signBox}/>}
-
                     <div className="cart mm:hidden lg:block">
-                        <button className='text-[1.8rem] pl-6'>
+                        <button className='text-[1.8rem] pl-4'>
                             <FaOpencart />
                         </button>
                     </div>
@@ -297,10 +322,11 @@ const Navbar = () => {
                                 onClick={handleSearch}>
                                 <RxCross1 className='pointer-events-none' />
                             </button>
-                            <input type="text" className='search-input' placeholder='Can you love me again ?' />
+                            <input type="text" className='search-input'
+                                placeholder='Can you love me again ?' />
                         </div>
 
-                        <button className='search-btn text-[1.8rem] pl-6 lg:pr-0 mm:pr-6' onClick={handleSearch}>
+                        <button className='search-btn text-[1.8rem] pl-5 lg:pr-0 mm:pr-6' onClick={handleSearch}>
                             <BsSearch className='pointer-events-none' />
                         </button>
                     </div>

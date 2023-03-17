@@ -1,11 +1,17 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@100;300;500;700&family=Oswald:wght@200;300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@100;300;500;700&family=Oswald:wght@200;300;500&family=Zilla+Slab:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@100;300;500;700&family=Oswald:wght@200;300;500&family=Poppins:wght@300;400;500;700&family=Zilla+Slab:ital@0;1&display=swap');
+
 /* FONTS */
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-blue: rgba(25, 38, 117, 1);
+}
 
 
 @layer components {
@@ -29,7 +35,7 @@
     .dropdown-second>.dropping-menu,
     .dropdown-third>.dropping-menu,
     .dropdown-fourth>.dropping-menu {
-        @apply invisible absolute duration-[.1s] translate-y-2 h-[6.25rem] overflow-hidden capitalize bg-gray-100 top-12 rounded-md opacity-0
+        @apply invisible absolute duration-[.2s] h-[6.25rem] overflow-hidden capitalize bg-gray-100 top-12 rounded-md opacity-0
     }
 
     .dropdown>.drop-menu,
@@ -48,7 +54,7 @@
     }
 
     .dropdown-third>.dropping-menu {
-        @apply w-[9.375rem]
+        @apply w-[11.375rem] h-[10rem]
     }
 
     .dropdown-fourth>.dropping-menu {
@@ -79,12 +85,13 @@
         @apply opacity-100 visible focus:bg-red-400
     }
 
+    /* SIGNUP/SIGININ  START */
     .login-btn {
         @apply bg-blue-800 hover:brightness-125 text-white border-blue-800 rounded-lg mt-8
     }
 
     .login-box {
-        @apply flex flex-col items-center justify-center fixed bg-slate-900/90 inset-0 opacity-100 transition-all duration-700
+        @apply flex flex-col items-center justify-center inset-0 opacity-100 transition-all duration-700
     }
 
     .account-box-register {
@@ -96,11 +103,11 @@
     }
 
     .course-box {
-        @apply before:bg-gray-300 before:absolute before:w-[300px] before:h-[166px] before:rounded-md hover:before:bg-premiumColor/70 hover:before:bg-clip-content hover:-translate-y-2 before:bg-clip-text 
+        @apply before:bg-gray-300 before:absolute before:w-[300px] before:h-[166px] before:rounded-md hover:before:bg-premiumColor/70 hover:before:bg-clip-content hover:-translate-y-2 before:bg-clip-text
     }
 
     .view-course-btn {
-        @apply rounded-full mt-[5rem] mb-0 border-solid border-[1px] border-premiumColor hover:border-premiumColor/0 text-premiumColor hover:bg-premiumColor hover:text-white
+        @apply rounded-full mt-[5rem] mb-0 border-solid border-[1px]  hover:border-premiumColor/0 text-premiumColor hover:bg-premiumColor hover:text-white
     }
 
     .start-now-btn {
@@ -110,13 +117,56 @@
     .btn.active {
         @apply relative before:h-[2px] before:absolute before:w-full before:left-0 before:-bottom-1 before:bg-premiumColor
     }
+
+    .store-btn {
+        @apply flex items-center rounded-md bg-transparent p-4 transition-colors duration-[.5s] hover:bg-blue-600 hover:border-blue-600 w-[250px]
+    }
+
+    .store-btn-enjoy {
+        @apply border-gray-400 border-[1px]
+    }
+
+    .store-btn-footer {
+        @apply text-gray-300 bg-[#0A0A0A]/80
+    }
+
+    .selected-filters-container.filter-container-close {
+        @apply h-[40px]
+    }
+
+    .rating-container.rating-container-close {
+        @apply h-[40px]
+    }
+
+    .footer-share a {
+        @apply hover:text-gray-300
+    }
+
+    .event-share a {
+        @apply hover:text-orange-500
+    }
+
 }
 
 @layer base {
+
     body {
         font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
+        background-color: #f9fafc;
         scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        width: .6rem;
+        background-color: inherit;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 1rem;
+        background-color: rgba(25, 38, 117, 0.7);
+        border-radius: 66px;
     }
 
     h1,
@@ -128,24 +178,24 @@
 
     .course-box,
     .course-box:hover {
-        transition: box-shadow,color,transform .3s ease-in-out;
+        transition: box-shadow, color, transform .3s ease-in-out;
     }
 
     .browse-course-box {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -15px,
             rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
     }
+
     .browse-course-box:hover {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px -15px,
             rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
-            transition: box-shadow,color .3s ease-in-out;
+        transition: box-shadow, color .3s ease-in-out;
     }
 
     .online-learning {
         background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678010582/Course%20bg%20images%20for%20Edumy/online-learning-img_rscqng.jpg');
         background-size: cover;
         background-position: center;
-        transition: background-attachment 5s ease-out;
         background-attachment: fixed;
         background-repeat: no-repeat;
         height: 70vh;
@@ -159,11 +209,371 @@
         height: 70vh;
     }
 
+    .courses-section .online-learning {
+        margin-top: 3rem;
+    }
+
     .testimonial-swiper img {
         width: 6rem;
         height: 6rem;
         border-radius: 66px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -15px,
             rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
-    } 
+    }
+
+    /*Positions for bg image and elements(text, color..)-(Latest news)  */
+    .left-news-first,
+    .left-news-second,
+    .left-news-thirty,
+    .mid-news,
+    .right-news {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 6px;
+        height: 440px;
+    }
+
+    .left-news-first::before,
+    .left-news-second::before,
+    .left-news-thirty::before,
+    .mid-news::before,
+    .right-news::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 440px;
+    }
+
+    .left-news-first {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678276249/Course%20bg%20images%20for%20Edumy/1_oimcd9.jpg');
+    }
+
+    .left-news-second {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678290920/Course%20bg%20images%20for%20Edumy/pexels-fox-1595385_cbwcop.jpg');
+    }
+
+    .left-news-thirty {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678294439/Course%20bg%20images%20for%20Edumy/pexels-katerina-holmes-5905700_uydqru.jpg');
+    }
+
+    .left-news-first::before,
+    .left-news-second::before,
+    .left-news-thirty::before,
+    .mid-news::before,
+    .right-news::before {
+        background-color: #00000099;
+    }
+
+    .mid-news {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678285399/Course%20bg%20images%20for%20Edumy/2_gkq4v5.jpg');
+    }
+
+    .right-news {
+        background-image: url('https://res.cloudinary.com/drx9zihrg/image/upload/v1678276285/Course%20bg%20images%20for%20Edumy/3_pa1jp5.jpg');
+    }
+
+    /* for Carousel navigation btns */
+    .latest-news-containers .swiper-button-next,
+    .latest-news-containers .swiper-button-prev {
+        color: #ccc8c8;
+    }
+
+    /* scale transform news/events posts START */
+    .parent-for-scale {
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .child-for-scale {
+        transition: transform 2.1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .parent-for-scale:hover .child-for-scale {
+        transform: scale(1.04);
+    }
+
+    /* scale transform news/events posts END  */
+
+    /* FOOTER START */
+    .footer-header .col h2 {
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding-bottom: 1.6rem;
+    }
+
+    .footer-header .col ul li {
+        color: #969696;
+        font-size: .8rem;
+        padding-bottom: 6px;
+    }
+
+    .footer-header .col a {
+        display: block;
+        transition: all .4s ease-in;
+    }
+
+    .footer-header .col a:hover {
+        transform: translateX(10px);
+        color: white;
+    }
+
+    /* FOOTER END */
+
+    /* SEARCH BOX && add ANIMATION START*/
+    .input-box {
+        position: relative;
+        height: 55px;
+        max-width: 55px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #fff;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-box.open {
+        max-width: 320px;
+    }
+
+    .input-box input {
+        outline: none;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #fff;
+    }
+
+    .input-box.open {
+        padding-left: 66px;
+    }
+
+    .search-icon {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .search-icon-in,
+    .close-icon {
+        position: absolute;
+        top: 50%;
+        font-size: 30px;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .search-icon-in {
+        color: #000;
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .input-box.open .search-icon-in {
+        transform: translateY(-50%) rotate(0);
+    }
+
+    .close-icon {
+        right: -5px;
+        color: #000;
+        padding: 10px 14px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    .input-box.open .close-icon {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    /* SEARCH BOX && add ANIMATION END*/
+
+    /* CUSTOM CHECKBOX START */
+    .input-checkbox {
+        position: relative;
+        border: 2px solid rgba(15, 38, 117, 0.3);
+        border-radius: 2px;
+        background: none;
+        cursor: pointer;
+        line-height: 0;
+        margin: 0 .6em 0 0;
+        outline: 0;
+        padding: 0 !important;
+        vertical-align: text-top;
+        height: 20px;
+        width: 20px;
+        -webkit-appearance: none;
+        opacity: .5;
+    }
+
+    .input-checkbox:hover {
+        opacity: 1;
+    }
+
+    .input-checkbox:checked {
+        background-color: rgba(25, 38, 117, 1);
+        opacity: 1;
+        border: 0;
+    }
+
+    .input-checkbox::before {
+        content: '';
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: 4px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        margin: -1px -1px 0 -1px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* CUSTOM CHECKBOX END */
+
+    /* CUSTOM RADIO BTN START */
+
+    .radio-box label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .radio-box label input[type="radio"] {
+        margin-right: 10px;
+        appearance: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+        outline: none;
+    }
+
+    .radio-box label input[type="radio"]:checked {
+        background-color: rgba(25, 38, 117, 0.7);
+        border-color: rgba(25, 38, 117, 0.7);
+    }
+
+    .radio-box label span {
+        font-size: 16px;
+    }
+
+    /* CUSTOM RADIO BTN END */
+
+    /* PAGINATION btns START*/
+    .pagination button {
+        @apply bg-white text-premiumColor font-[700] px-4 py-2 border-premiumColor border-[1px] rounded-md transition-colors duration-500 ease-linear
+    }
+
+    .pagination button.active {
+        @apply bg-premiumColor text-white
+    }
+
+    /* PAGINATION btns END  */
+
+    /* EVENTS, EVENTS LISTS START */
+    .event-card-left {
+        @apply sm:h-[60vh] mm:h-[40vh] before:bg-[#0000004d] before:absolute before:h-full before:w-full before:rounded-[.9rem]
+    }
+
+    .event-left-img {
+        @apply before:bg-[#0000004d] before:absolute before:h-full before:w-full before:rounded-[.9rem]
+    }
+
+    /* EVENTS, EVENTS LISTS END */
+
+    /* WAIT AA MINUTE */
+    .bab {
+        background: rgba(25, 38, 117, 0.5);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.2px);
+        -webkit-backdrop-filter: blur(3.2px);
+        border: 1px solid rgba(25, 38, 117, 0.1);
+    }
+
+    /* WAIT AA MINUTE */
+
+
+    /* CONTENT LIST STYLE START */
+    .edu-titles {
+        list-style-type: none;
+        font-size: 1rem;
+    }
+
+    .edu-titles li {
+        margin-bottom: 5px;
+        position: relative;
+        line-height: 1.5;
+    }
+
+    .edu-titles li:before {
+        content: "";
+        /* display: flex; */
+        width: 12px;
+        height: 12px;
+        background-color: #ff6600;
+        position: absolute;
+        left: -18px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    /* CONTENT LIST STYLE END */
+
+    .slider .MuiSlider-thumb {
+        color: rgba(25, 38, 117, 1);
+    }
+    .accordion-question {
+        font-family: 'Zilla Slab', serif;
+    }
+
+    .accordion-question::before {
+        content: '';
+        display: block;
+        position: absolute;
+        display: inline-block;
+        width: 18rem;
+        height: 1px;
+        border-bottom: 1px solid var(--primary-blue);
+        bottom: 0;
+        transition: all .8s ease;
+    }
+
+    .accordion-question:hover::before {
+        width: 25rem;
+    }
+
+
+    /* LOG IN/UP PAGE ANIMATION SVG  */
+    .login-svg svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        background-color: var(--primary-blue);
+        background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #fff);
+    }
+
+    .return-home-btn,
+    .account-box {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        
+    }
+
 }

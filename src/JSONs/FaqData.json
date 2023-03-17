@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Ödənişlər",
+        "item": [
+            {
+                "faq_id": 1,
+                "faq_question": "Ödənişim niyə həyata keçmir ?",
+                "faq_answer": "Abunəliyinizdən və düzgün ödəniş üsulundan istifadə etdiyinizdən əmin olun."
+            },
+            {
+                "faq_id": 2,
+                "faq_question": "Necə geri ödəmə edə bilərəm ?",
+                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+            },
+            {
+                "faq_id": 3,
+                "faq_question": "Hesabı necə dəyişə bilərəm ?",
+                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Məsləhətlər",
+        "item": [
+            {
+                "faq_id": 4,
+                "faq_question": "Necə endirim əldə etmək olar",
+                "faq_answer": "Abunəliyinizdən və düzgün ödəniş üsulundan istifadə etdiyinizdən əmin olun."
+            },
+            {
+                "faq_id": 5,
+                "faq_question": "Necə geri ödəmə edə bilərəm ?",
+                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+            },
+            {
+                "faq_id": 6,
+                "faq_question": "Hesabı necə dəyişə bilərəm ?",
+                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+            }
+        ]
+    }
+]

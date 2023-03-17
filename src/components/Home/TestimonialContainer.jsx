@@ -10,8 +10,8 @@ const TestimonialContainer = ({  testimonial_img, testimonial_client, testimonia
                 </div>
 
                 <div className='text-center space-y-1'>
-                    <h3 className='font-[700] pt-1'>{testimonial_name}</h3>
-                    <span className='text-premiumColor font-[700]'>{testimonial_client}</span>
+                    <h3 className='font-[500] pt-2'>{testimonial_name}</h3>
+                    <span className='text-premiumColor font-[500]'>{testimonial_client}</span>
                     <p className='max-w-[330px]'>{testimonial_detail}</p>
                 </div>
             </div>
