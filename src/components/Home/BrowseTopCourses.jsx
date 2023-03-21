@@ -19,7 +19,7 @@ const BrowseTopCourses = () => {
 
         setFiltered(filtered)
 
-        // SORT GAGAaaa
+        // SORT 
         // console.log(filtered.sort(function (a, b) {
         //     return a.post_price - b.post_price
         // }))
@@ -34,11 +34,11 @@ const BrowseTopCourses = () => {
             <section className='browse-courses mb-32'>
 
                 <div className="browse-courses-head text-center px-6">
-                    <h2 className='text-[1.7rem] font-[500] pb-1 capitalize'>Ən yaxşı kurslarımızı nəzərdən keçirin</h2>
-                    <h6>Kurslarımız qabaqcıl texnologiya və ekspert təlimatçıların birləşməsi ilə həyatınızı dəyişəcək</h6>
+                    <h2 className='text-[1.7rem] text-myBlack font-[600] pb-1 capitalize'>Ən yaxşı kurslarımızı nəzərdən keçirin</h2>
+                    <h6 className='text-myBlack font-[500]'>Kurslarımız qabaqcıl texnologiya və ekspert təlimatçıların birləşməsi ilə həyatınızı dəyişəcək</h6>
                 </div>
 
-                <div className="filter-container mm:space-x-3 sm:space-x-9 flex justify-center my-10 mm:text-[.9rem] sm:text-[1rem]">
+                <div className="filter-container mm:space-x-3 sm:space-x-9 flex justify-center my-10 mm:text-[.9rem] sm:text-[1rem] font-[500] text-myBlack">
 
                     <button className={activeCategory === '' ? "btn active" : ""} onClick={() => setActiveCategory('')}>
                         Hamısı
@@ -59,7 +59,7 @@ const BrowseTopCourses = () => {
 
                 <motion.div
                     layout
-                    className="course-cards place-items-center grid mm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 px-10">
+                    className="course-cards grid mm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7 px-10">
                     <AnimatePresence>
                         {
                             filtered.map((post) => (

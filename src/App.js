@@ -1,24 +1,28 @@
 // COMPONENTS
-import Navbar from "./components/main/Navbar";
 import Footer from "./components/main/Footer";
 import UpArrow from "./components/main/UpArrow";
 
 // ROUTING
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useMatch } from 'react-router-dom';
 
 //PAGES
 import Home from "./pages/Home";
+
 import Instructors from "./pages/Instructors";
 import Courses from "./pages/Courses";
 import EventList from "./pages/EventList";
 import Event from "./pages/Event";
 import Shop from "./pages/Shop";
 import Faq from "./pages/Faq";
-import LoginRegister from "./pages/LoginRegister";
 import AboutUs from "./pages/AboutUs";
 import BlogList from "./pages/BlogList";
-
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Navbar from "./components/Navbar/Navbar";
+import NotFound from "./pages/NotFound";
+import CookieNotification from "./components/main/CookieNotification";
 
 function App() {
 
@@ -29,20 +33,26 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path='/instructors' element={<Instructors />} />
           <Route path='/eventslist' element={<EventList />} />
           <Route path='/event' element={<Event />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/login" element={<LoginRegister />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/bloglist" element={<BlogList />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <UpArrow />
         <Footer />
+
+        {/* <CookieNotification /> */}
 
       </Router>
     </>

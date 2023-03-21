@@ -5,8 +5,10 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import { EffectFade, Navigation, Autoplay } from "swiper";
-
 import { GoCalendar, GoLocation } from "react-icons/go";
+
+import BlogInfo from '../../JSONs/blogInfo.json'
+import BlogCard from '../BlogPage/BlogCard';
 
 const LatestNews = () => {
 
@@ -14,14 +16,14 @@ const LatestNews = () => {
         <>
             <section className="latest-news pb-32">
 
-                <div className="news-head text-center px-6 pb-10">
-                    <h2 className='text-[1.7rem] font-[500] pb-1 capitalize'>Ən son xəbərlər</h2>
-                    <h6>Ən son baş vermiş hadisələrdən xəbərdar olun</h6>
+                    <div className="news-head text-myBlack text-center px-6 pb-10">
+                    <h2 className='text-[1.7rem] font-[600] pb-1 capitalize'>Ən son xəbərlər</h2>
+                    <h6 className='font-[500]'>Ən son baş vermiş hadisələrdən xəbərdar olun</h6>
                 </div>
 
-                <div className="latest-news-containers px-10 grid mm:grid-cols-1 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-8 gap-4">
+                <div className="latest-news-containers px-10 grid mm:grid-cols-1 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-12 gap-4">
 
-                    <div className='mm:col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
+                    <div className='mm:col-span-1 md:col-span-4 lg:col-span-3 xl:col-span-6'>
                         <Swiper
                             spaceBetween={30}
                             effect={"fade"}
@@ -47,7 +49,7 @@ const LatestNews = () => {
                                             <div className='flex items-center mm:space-x-1 sm:space-x-2 text-gray-200'>
                                                 <span><GoCalendar className='text-[1.1rem]' /></span>
                                                 <h3 className='sm:pr-7 mm:pr-0 mm:text-[.7rem] sm:text-[.9rem] mm:w-[70px] sm:w-[120px]'>14:00 - 16:00</h3>
-                                                <span><GoLocation className='text-[1.1rem]'/></span>
+                                                <span><GoLocation className='text-[1.1rem]' /></span>
                                                 <h3 className='mm:text-[.7rem] w-[140px] sm:text-[.9rem]'>Azərbaycan, Bakı</h3>
                                             </div>
 
@@ -101,36 +103,17 @@ const LatestNews = () => {
                             </SwiperSlide>
 
                         </Swiper>
+
+
                     </div>
 
-
-
-                    <div className='parent-for-scale mm:col-span-1 md:col-span-2 lg:col-span-2  xl:col-span-2'>
-                        <div className="child-for-scale mid-news">
-                            <span className="absolute left-7 top-6 text-gray-200 text-[.9rem]">
-                                May 21, &nbsp; 2023
-                            </span>
-
-                            <div className="mid-news-bottom absolute bottom-6 left-7">
-                                <h6 className='text-gray-200 text-[.9rem] pb-2'>Marketinq</h6>
-                                <p className='text-white'>Müəllimlər üçün hazırlanmış <br /> həll üsulları</p>
-                            </div>
+                    {/*//////////////// mid and right blogs/////////////// */}
+                    {BlogInfo.map((oneBlog) => (
+                        oneBlog.home_available &&
+                        <div key={oneBlog.blog_id} className='xl:col-span-3 lg:col-span-2 sm:col-span-1 md:col-span-4 mm:col-span-1'>
+                            <BlogCard {...oneBlog} />
                         </div>
-                    </div>
-
-                    <div className="parent-for-scale mm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2">
-                        <div className="child-for-scale right-news">
-
-                            <span className="absolute left-7 top-6 text-gray-200 text-[.9rem]">
-                                May 27, &nbsp; 2023
-                            </span>
-
-                            <div className="right-news-bottom absolute bottom-6 left-7">
-                                <h6 className='text-gray-200 text-[.9rem] pb-2'>Biznes</h6>
-                                <p className='text-white'>Arzular gerçəkləşdi: Tələbələr üçün təqaüd Fondu</p>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
 
                 </div>
 

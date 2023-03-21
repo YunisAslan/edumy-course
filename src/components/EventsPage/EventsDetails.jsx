@@ -6,6 +6,7 @@ import { BsTelephonePlus } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbWorld } from "react-icons/tb";
 import { motion } from 'framer-motion';
+import TagPanel from '../BlogPage/TagPanel';
 
 const EventsDetails = () => {
     return (
@@ -57,28 +58,7 @@ const EventsDetails = () => {
                     </div>
                 </div>
 
-                <div className="tags-panel bg-gray-300 p-4 rounded-lg mt-6">
-                    <h2 className='font-[600] text-[1.2rem] pb-4'>Etiketlər</h2>
-
-                    <div className='pl-2'>
-
-                        <span className='bg-premiumColor text-center mr-3 text-white rounded-md 
-                            text-[.8rem] mb-2 py-1 px-2 inline-block w-[110px]'>
-                            <span># Photoshop</span>
-                        </span>
-
-                        <span className='bg-premiumColor text-center mr-3 text-white rounded-md 
-                            text-[.8rem] mb-2 py-1 px-2 inline-block w-[110px]'>
-                            <span># Sketch</span>
-                        </span>
-
-                        <span className='bg-premiumColor text-center mr-3 text-white rounded-md 
-                            text-[.8rem] mb-2 py-1 px-2 inline-block w-[110px]'>
-                            <span># UX/UI</span>
-                        </span>
-
-                    </div>
-                </div>
+                <TagPanel tag1="UX/UI" tag2="Sketch" tag3="Photoshop" />
 
             </div>
 

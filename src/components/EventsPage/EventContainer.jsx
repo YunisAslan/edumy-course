@@ -32,15 +32,15 @@ const EventContainer = () => {
                     <CountDown />
 
                     <div className="event-desc pt-9 pr-4">
-                        <h2 className='pb-3 font-[700] text-[1.4rem]'>EVENT</h2>
+                        <h2 className='pb-3 font-[500] text-[1.4rem]'>EVENT</h2>
                         <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio doloremque cupiditate adipisci veniam. Incidunt placeat natus nihil quo, ex, itaque possimus, sunt doloremque perferendis repellendus quod commodi accusantium vitae quos.</p>
                         <p className='pt-3 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam aliquam nulla eligendi minus quisquam cumque quos ratione, error rerum?</p>
                     </div>
 
                     <div className="event-content pt-6">
-                        <h2 className='font-[700] pb-3 text-[1.4rem]'>Event Content</h2>
+                        <h2 className='font-[500] pb-3 text-[1.4rem]'>Event Content</h2>
 
-                        <ul className='edu-titles pl-4'>
+                        <ul className='list-titles pl-4'>
                             <li>You will need a copy of Adobe XD 2019 or above. A free trial can b</li>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, blanditiis.</li>
                             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi </li>

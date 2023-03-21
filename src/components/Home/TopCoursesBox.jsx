@@ -29,14 +29,15 @@ const TopCoursesBox = ({ ...post }) => {
                     initial={{ opacity: 0 }}
                     exit={{ opacity: 0 }}
                     layout
-                    className='browse-course-box text-black w-[300px] h-[430px] border-gray-300 border-[1px] rounded-[4px] cursor-pointer' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    className='browse-course-box bg-[#fff] text-myBlack font-[500] w-[340px] h-[430px] border-gray-300 border-[1px] rounded-lg cursor-pointer' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
                     <div className='relative' >
 
-                        <img src={post.post_img} alt="" className='rounded-[4px]' />
+                        <img src={post.post_img} alt="" className='rounded-[4px] w-full' />
                         <AnimatePresence>
                             {showOverlay && (
-                                <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: .3 }}>
+                                <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} 
+                                exit={{ opacity: 0 }} transition={{ duration: .3 }}>
                                     {post.post_seller && //post_seller===true
                                         <button className='text-white z-[3] bg-red-800 rounded-[6px] px-3 py-1 top-3 left-2 absolute'>
                                             {"Best Seller"}
@@ -52,7 +53,7 @@ const TopCoursesBox = ({ ...post }) => {
                         </AnimatePresence>
                     </div>
 
-                    <div className="post-head px-4 pt-5">
+                    <div className="post-head px-4 pt-3 h-[90px]">
                         <h2 className='text-[1.3rem] pb-2'>{post.post_head}</h2>
                         <p>{post.post_detail}</p>
                     </div>

@@ -12,7 +12,9 @@ module.exports = {
         "poppinsFont": ['Poppins', 'sans-serif']   
       },
       colors: {
-        "premiumColor": "rgba(25, 38, 117, 0.7)"
+        "premiumColor": "rgba(25, 38, 117, 0.7)",
+        "beautyGray": '#00000099',
+        "myBlack": "#07122B"
       },
       screens: {
         "mm": "350px",

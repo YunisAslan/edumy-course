@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React,{ useEffect} from 'react'
 
 import Button from '../main/Button';
 
@@ -62,7 +62,7 @@ const Header = () => {
                     <SwiperSlide className='slide' style={{ backgroundImage: `url(${headerImg1})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: 'cover', height: "90vh", width: "100vw" }}>
                         <div className='header-content'>
                             <h2 className='lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase mm:px-3 lg:px-0'>Özünü təhsil resursları və məlumatları</h2>
-                            <h6 className='z-50 sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
+                            <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
                                 Texnologiya böyük bir təkamül dalğası gətirir
                             </h6>
                             <Button btnText="Başlamağa Hazırsız ?" classname="my-custom-btn header-btn" />
@@ -73,8 +73,8 @@ const Header = () => {
 
                     <SwiperSlide className='slide' style={{ backgroundImage: `url(${headerImg2})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: 'cover', height: "90vh", width: "100vw" }}>
                         <div className='header-content'>
-                            <h2 className='z-50 lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Ən yaxşı kursları tapın</h2>
-                            <h6 className='z-50 sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
+                            <h2 className='z-[44] lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Ən yaxşı kursları tapın</h2>
+                            <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
                                 Bu kurslar sizə real keyfiyyət təqdim edəcək
                             </h6>
                             <Button btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />
@@ -83,8 +83,8 @@ const Header = () => {
 
                     <SwiperSlide className='slide' style={{ backgroundImage: `url(${headerImg3})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: 'cover', height: "90vh", width: "100vw" }}>
                         <div className='header-content'>
-                            <h2 className='z-50 lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Lorem ipsum</h2>
-                            <h6 className='z-50 sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
+                            <h2 className='z-[44] lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Lorem ipsum</h2>
+                            <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
                                 lorem
                             </h6>
                             <Button btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />

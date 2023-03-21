@@ -4,7 +4,8 @@ import { BsSearch } from "react-icons/bs";
 import { VscChromeClose } from "react-icons/vsc";
 
 const InputBox = ({inputBoxHolder}) => {
-    const inputBoxRef = useRef()
+    
+    const inputBoxRef = useRef();
 
     const getSearchBox = (e) => {
         if (e.target.classList.contains('search-icon')) {

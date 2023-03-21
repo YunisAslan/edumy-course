@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { AiOutlineRocket } from "react-icons/ai";
+import { BsArrowUp } from 'react-icons/bs';
+
+
 
 
 const UpArrow = () => {
@@ -34,9 +38,9 @@ const UpArrow = () => {
         <>
 
             {isVisible && (
-                <button className="scroll-to-top-btn text-[2rem] right-4 bottom-4  fixed text-white bg-black/90 rounded-full z-50" 
+                <button className="scroll-to-top-btn text-[1.5rem] right-4 bottom-4 p-2 font-[700] fixed rounded-full z-50 bg-white text-black" 
                 onClick={scrollToTop}>
-                    <BsFillArrowUpCircleFill />
+                    <BsArrowUp />
                 </button>
             )}
 

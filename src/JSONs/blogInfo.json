@@ -1,0 +1,34 @@
+[
+    {
+        "blog_id": 1,
+        "blog_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678285399/Course%20bg%20images%20for%20Edumy/2_gkq4v5.jpg",
+        "blog_date": "May 21, 2023",
+        "blog_title": "Marketinq",
+        "blog_detail": "Müəllimlər üçün hazırlanmış həll üsulları",
+        "home_available": true
+    },
+    {
+        "blog_id": 2,
+        "blog_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678276285/Course%20bg%20images%20for%20Edumy/3_pa1jp5.jpg",
+        "blog_date": "May 27, 2023",
+        "blog_title": "Biznes",
+        "blog_detail": "Arzular gerçəkləşdi: Tələbələr üçün təqaüd Fondu",
+        "home_available": true
+    },
+    {
+        "blog_id": 3,
+        "blog_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1679075049/2a_xyekfl.jpg",
+        "blog_date": "iyun 2, 2023",
+        "blog_title": "Marketinq",
+        "blog_detail": "Ən son kurslara daxil olun və bacarıqlarınızı artırın",
+        "home_available": false
+    },
+    {
+        "blog_id": 4,
+        "blog_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1679075643/3a_sp1rqy.jpg",
+        "blog_date": "iyun 11, 2023",
+        "blog_title": "Biznes",
+        "blog_detail": "Onlayn Biznes Bacarıqları: Karyeranızda irəliləyin.",
+        "home_available": false
+    }
+]

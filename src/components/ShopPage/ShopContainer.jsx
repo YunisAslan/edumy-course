@@ -5,8 +5,7 @@ import ShopCard from './ShopCard'
 import ShopCardInfo from '../../JSONs/ShopInfos.json'
 import SelectedFilter from '../main/SelectedFilter';
 
-//slider for products price
-
+//slider input (range ) for products price
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
@@ -17,14 +16,14 @@ const ShopContainer = () => {
         return `${value}°C`;
     }
 
-    const [value, setValue] = React.useState([20, 37]);
+    const [value, setValue] = useState([20, 37]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
     const sliderStyle = {
-        width: 220, // set the desired width here,
+        width: 220, 
         opacity: 0.9,
         color: 'rgba(25, 38, 117, 0.7)',
         marginLeft: '1.6rem',

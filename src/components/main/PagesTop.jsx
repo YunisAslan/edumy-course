@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Navbar/Navbar'
 
 const PagesTop = ({ main_page, current_page }) => {
     return (
@@ -14,7 +14,9 @@ const PagesTop = ({ main_page, current_page }) => {
                     height: "65vh"
                 }}
             >
+
                 <Navbar />
+               
 
                 <div className="pages-top-titles absolute flex-col text-white flex justify-center items-center w-[100%] h-[100%] pt-[5rem]">
                         <span className='text-[1.4rem]'>{main_page} / {current_page}</span>

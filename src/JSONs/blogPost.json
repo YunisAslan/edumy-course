@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "post_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1679078628/13_fl4aso.jpg",
+        "post_category": "Marketinq",
+        "post_day": "17",
+        "post_month": "İyun",
+        "post_title": "Kurslara daxil olun və bacarıqlarınızı artırın",
+        "post_author": "Ali Tufan",
+        "post_comments": "14",
+        "post_detail": "Saytımızdakı onlayn təlim kurslarına qoşulmaqla siz öz bacarıqlarınızı təkmilləşdirə və iş dünyasında daha rəqabətədavamlı ola bilərsiniz. Kurslarımız təcrübəli təlimçilər tərəfindən hazırlanır və müxtəlif mövzular üzrə təklif olunur. Proqram təminatının hazırlanması, rəqəmsal marketinq, maliyyə təhlili və ya başqa hər hansı bir sahədə bacarıqlarınızı artırmaq istəsəniz, veb saytımızda bir çox variant tapa bilərsiniz.",
+        "available_post_page": false
+    },
+    {
+        "id": 2,
+        "post_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1679085252/14_xodnu9.jpg",
+        "post_category": "Biznes",
+        "post_day": "4",
+        "post_month": "İyul",
+        "post_title": "Dəyişən biznes mənzərəsində naviqasiya: Uğur üçün strategiyalar",
+        "post_author": "Aslan Hümmətov",
+        "post_comments": "27",
+        "post_detail": "Bu gün sürətlə dəyişən biznes mühitində əyridən qabaqda qalmaq çətin ola bilər. İnkişaf etməkdə olan mənzərəni idarə etməyə və iş dünyasında uğur qazanmağınıza kömək etmək üçün bu onlayn kurs seriyasını təklif etməkdən məmnunuq.Bu seriyada siz biznesinizi qurmaq və böyütmək, liderlik bacarıqlarınızı artırmaq və daim dəyişən bazarda rəqabətədavamlı qalmaq üçün praktiki strategiya və texnikaları öyrənəcəksiniz.",
+        "available_post_page": true 
+    }
+]

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Button from '../main/Button'
-import CoursesBox from './CoursesBox'
+import CoursesBox from '../CoursesPage/CoursesBox'
 import coursesInfo from '../../JSONs/coursesInfo.json'
 import OnlineLearning from './OnlineLearning'
 
@@ -10,9 +10,9 @@ const Courses = () => {
     return (
         <>
             <section className='courses-section mt-[5rem] mb-[10rem]'>
-                <div className="courses-head text-center pb-10">
-                    <h2 className='text-[1.7rem] font-[500] pb-1 capitalize'>Kurs kateqoriyaları</h2>
-                    <h6 className='px-5'>Güclü təməl üçün bizim kursları seçməlisiniz</h6>
+                <div className="courses-head text-center pb-10 text-myBlack">
+                    <h2 className='text-[1.7rem] font-[600] pb-1 capitalize]'>Kurs kateqoriyaları</h2>
+                    <h6 className='px-5 font-[500]'>Güclü təməl üçün bizim kursları seçməlisiniz</h6>
                 </div>
 
                 <div className='courses-box grid mm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 place-items-center mx-10'>
