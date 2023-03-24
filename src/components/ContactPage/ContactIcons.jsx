@@ -21,7 +21,7 @@ const ContactIcons = () => {
                     />
 
                     <h2 className='sm:text-[1.5rem] mm:text-lg font-[500] text-myBlack pb-2'>Ünvan</h2>
-                    <span className='mm:text-sm sm:text-base'>Elmlər akademiyası, <br /> Bəxtiyar Vahabzadə küçəsi</span>
+                    <span className='mm:text-sm sm:text-base text-myBlack'>Elmlər akademiyası, <br /> Bəxtiyar Vahabzadə küçəsi</span>
                 </div>
 
                 <div className='flex flex-col items-center text-center justify-center'>
@@ -33,7 +33,7 @@ const ContactIcons = () => {
                     />
 
                     <h2 className='sm:text-[1.5rem] mm:text-lg font-[500] text-myBlack pb-2'>Bizə yazın</h2>
-                    <span className='mm:text-sm sm:text-base'>Info@edumy.com</span>
+                    <span className='mm:text-sm sm:text-base text-myBlack'>Info@edumy.com</span>
                 </div>
 
                 <div className='flex flex-col items-center text-center justify-center'>
@@ -45,7 +45,7 @@ const ContactIcons = () => {
                     />
 
                     <h2 className='sm:text-[1.5rem] mm:text-lg font-[500] text-myBlack pb-2'>Telefon</h2>
-                    <a href="tel:+994509758292" className='mm:text-sm sm:text-base'>+994-50-975-8292</a>
+                    <a href="tel:+994509758292" className='mm:text-sm sm:text-base text-myBlack'>+994-50-975-8292</a>
                 </div>
 
             </div>

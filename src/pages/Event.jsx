@@ -6,7 +6,7 @@ import PagesTop from '../components/main/PagesTop'
 const Event = () => {
     return (
         <>
-            <PagesTop main_page="Tədbirlər" current_page="Tədbir"/>
+            <PagesTop main_page="Ana Səhifə" current_page="Tədbirlər"/>
 
             <EventContainer />
         </>

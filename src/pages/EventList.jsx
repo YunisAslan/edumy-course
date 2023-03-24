@@ -4,6 +4,7 @@ import EventsCard from '../components/EventsPage/EventsCard'
 import Pagination from '../components/CoursesPage/Pagination'
 
 import EventsInfo from '../JSONs/EventsInfo.json'
+import { useEffect } from 'react'
 
 const EventList = () => {
 
@@ -17,9 +18,17 @@ const EventList = () => {
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
+    useEffect(() => {
+        window.scroll({
+            top: 440,
+            left: 0,
+            behavior: "smooth"
+        })
+    }, [])
+
     return (
         <>
-            <PagesTop main_page="Tədbirlər" current_page="Tədbirlər Siyahısı" />
+            <PagesTop main_page="Ana Səhifə" current_page="Tədbirlər Siyahısı" />
 
             {
                 currentPosts.map((oneEvent) => (

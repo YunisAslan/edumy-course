@@ -1,5 +1,7 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
+
+import Typed from 'react-typed';
+
 
 const PagesTop = ({ main_page, current_page }) => {
     return (
@@ -15,12 +17,17 @@ const PagesTop = ({ main_page, current_page }) => {
                 }}
             >
 
-                <Navbar />
-               
 
-                <div className="pages-top-titles absolute flex-col text-white flex justify-center items-center w-[100%] h-[100%] pt-[5rem]">
-                        <span className='text-[1.4rem]'>{main_page} / {current_page}</span>
+                <div className="pages-top-titles absolute flex-col text-white  flex justify-center items-center w-[100%] h-[100%] pt-[2rem]">
+                    {/* <span className='text-[1.4rem]'>{main_page} / {current_page}</span> */}
+                    <Typed className='mm:text-3xl mm:px-6 sm:text-4xl md:text-6xl font-zillaFont font-[600] -tracking-tighter'
+                        strings={[`${main_page} / ${current_page}`]}
+                        typeSpeed={70}
+                        loop
+                    />
                 </div>
+
+
 
             </header>
         </>

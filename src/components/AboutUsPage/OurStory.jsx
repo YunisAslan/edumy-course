@@ -55,15 +55,15 @@ const OurStory = () => {
 
 
 
-                <div className="story-intro pt-[5.5rem] grid grid-cols-12 text-justify">
+                <div className="story-intro pt-[5.5rem] grid grid-cols-12 text-justify mm:text-center sm:text-left">
 
-                    <div className="story-intro-left pr-10 lg:col-span-6 mm:col-span-12 pb-5">
+                    <div className="story-intro-left mm:pr-0 sm:pr-10 lg:col-span-6 mm:col-span-12 pb-5 ">
                         <h2 className='text-[1.5rem] pb-5 text-premiumColor/100'>Biz Kimik</h2>
                         <p>Onlayn Təhsil veb-saytımızda biz dünyanın hər yerindən tələbələrə yüksək keyfiyyətli təhsil verməkdə həvəsliyik. <br /> <br /> Komandamız öyrənməni hər kəs üçün əlçatan və zövqlü etməyə sadiq olan təcrübəli pedaqoqlardan və peşəkarlardan ibarətdir. Biz inanırıq ki, təhsil daha parlaq gələcəyin kilidini açmaq üçün açardır və biz dünyada müsbət təsir göstərməyə sadiqik. Onlayn təhsil veb-saytımızda biz hər yaşdan və mənşədən olan tələbələri gücləndirməyə çalışırıq. <br /> <br /> Beləliklə, bu kəşf səyahətində bizə qoşulun və gəlin birlikdə öyrənək və inkişaf edək.
                         </p>
                     </div>
 
-                    <div className="story-intro-right pr-10 lg:col-span-6 mm:col-span-12 ">
+                    <div className="story-intro-right mm:pr-0 mm:pt-4 sm:pr-10 sm:pt-0 lg:col-span-6 mm:col-span-12 ">
                         <h2 className='text-[1.5rem] pb-5 text-premiumColor/100'>Biz Nə Edirik</h2>
                         <p>Biz təcrübəsindən asılı olmayaraq hər bir tələbənin ehtiyaclarına cavab verən müxtəlif kurslar və proqramlar təqdim etməyə çalışırıq. Onlayn təhsil platformamız akademik fənlərdən tutmuş praktik bacarıqlara qədər geniş kurslar təklif edir.<br /> <br /> Komandamız bilik, bacarıq və karyera imkanlarını artırmaq üçün nəzərdə tutulmuş cəlbedici və interaktiv öyrənmə təcrübələrini təqdim etməyə sadiqdir. <br /><br /> Bu gün bizə qoşulun və proqramlarımızın potensialınızı açmaq və arzularınıza çatmaqda sizə necə kömək edə biləcəyini kəşf edin.</p>
                     </div>

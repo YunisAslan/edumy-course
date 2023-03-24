@@ -16,7 +16,7 @@ const AboutUsContainer = () => {
             <div>
                 <OnlineLearning />
 
-                <h2 className='text-center text-[1.7rem] font-[500] pt-12'>Məşhur Təlimçilər</h2>
+                <h2 className='text-center text-[1.7rem] text-myBlack font-[500] pt-12'>Məşhur Təlimçilər</h2>
                 <PopularInstructors />
                 <Testimonials />
             </div>

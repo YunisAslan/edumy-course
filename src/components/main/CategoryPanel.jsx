@@ -3,7 +3,7 @@ import React from 'react'
 const CategoryPanel = () => {
     return (
         <>
-            <div className='bg-gray-300 mt-6 rounded-lg p-4'>
+            <div className='bg-softBlue mt-6 rounded-lg p-4 text-myBlack'>
 
                 <h2 className='font-[500] text-xl'>Kateqoriya</h2>
 

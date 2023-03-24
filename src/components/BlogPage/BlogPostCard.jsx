@@ -28,10 +28,10 @@ const BlogPostCard = ({...oneBlog}) => {
 
                 </div>
 
-                <div className="blog-post-detail pt-5">
-                    <h2 className='font-[500] text-[1.5rem]'>{oneBlog.post_title}</h2>
+                <div className="blog-post-detail pt-5 text-myBlack">
+                    <h2 className='font-[500] text-[1.5rem] mm:text-center sm:text-justify'>{oneBlog.post_title}</h2>
 
-                    <div className='flex pt-4'>
+                    <div className='flex pt-4 mm:justify-center sm:justify-start'>
                         <span className='flex'>
                             <RxPerson className='mr-2 text-[1.5rem] text-slate-600' />{oneBlog.post_author}</span>
                         <span className='flex pl-5'>
@@ -40,7 +40,7 @@ const BlogPostCard = ({...oneBlog}) => {
                         </span>
                     </div>
 
-                    <p className='text-justify pt-6 pr-6'>{oneBlog.post_detail}</p>
+                    <p className='pt-6 pr-6 text-lg mm:text-center sm:text-justify'>{oneBlog.post_detail}</p>
                 </div>
 
             </div>

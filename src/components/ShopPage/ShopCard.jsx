@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 
 import { FaOpencart } from "react-icons/fa";
 
+import { AnimatePresence, motion } from 'framer-motion';
 
-
-const ShopCard = ({...oneCard}) => {
+const ShopCard = ({ ...oneCard }) => {
 
     const [showHover, setShowHover] = useState(false)
 
     return (
         <>
-            <div className="shop-card bg-blue-200 rounded-lg w-[300px] h-[380px] cursor-pointer"
+            <div className="shop-card bg-[#87CEEB] rounded-lg w-[300px] h-[380px] cursor-pointer shadow-barShadow hover:scale-105 transition-all duration-500 ease-linear"
                 onMouseEnter={() => setShowHover(true)} onMouseLeave={() => setShowHover(false)}
             >
 
@@ -21,7 +21,7 @@ const ShopCard = ({...oneCard}) => {
                 <div className="shop-card-details pt-5 pl-6 justify-between">
 
                     <h6 className='text-[1.3rem] text-red-800'>&#x24;{oneCard.shop_price}</h6>
-                    <h2 className='text-[1.1rem]'>{oneCard.shop_title}</h2>
+                    <h2 className='text-[1.1rem] text-myBlack'>{oneCard.shop_title}</h2>
 
                     <div className="shop-rating flex pt-2 space-x-1 items-center">
                         <span>
@@ -39,18 +39,19 @@ const ShopCard = ({...oneCard}) => {
                         <span>
                             <img src={oneCard.shop_star5} alt="" className='w-5' />
                         </span>
-                        <span className='pl-2 text-[1.1rem]'>
+                        <span className='pl-2 text-[1.1rem] text-myBlack'>
                             ({oneCard.shop_rating})
                         </span>
                     </div>
 
                     <div className='flex pb-8 relative'>
-                        {showHover &&
-
-                            <span className='bg-blue-600 text-white rounded-full p-3 absolute right-3 bottom-3'>
-                                <FaOpencart className='text-[1.8rem]'/>
-                            </span>
-                        }
+                        <AnimatePresence>
+                            {showHover &&
+                                <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .4, ease: 'easeInOut' }} className='bg-white text-myBlack rounded-full p-3 absolute right-3 bottom-3'>
+                                    <FaOpencart className='text-[1.8rem]' />
+                                </motion.button>
+                            }
+                        </AnimatePresence>
                     </div>
                 </div>
             </div>

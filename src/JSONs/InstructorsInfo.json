@@ -12,6 +12,7 @@
         "instructor_rating": "47",
         "instructor_students": "346",
         "instructor_courses": "38",
+        "back_detail": "Marketinq təlimatçısı, marketinq sahəsində tələbələri öyrətmək və onlara rəhbərlik etmək üçün cavabdeh olan peşəkardır. Onlar onlayn kurslar hazırlayır və çatdırır.",
         "popular": true,
         "participant": true
     },
@@ -28,6 +29,7 @@
         "instructor_rating": "41",
         "instructor_students": "152",
         "instructor_courses": "33",
+        "back_detail": "Sulu boya (akvarel) təlimatçısı tələbələrə akvarel rəssamlığı sənətini öyrədən və istiqamətləndirən peşəkardır.",
         "popular": true,
         "participant": false
     },
@@ -44,6 +46,7 @@
         "instructor_rating": "76",
         "instructor_students": "258",
         "instructor_courses": "49",
+        "back_detail": "Tələbələrə musiqinin müxtəlif aspektlərində, məsələn, alətlərdə ifa, oxuma, musiqi nəzəriyyəsi, bəstəkarlıq və musiqi istehsalı kimi dərslər keçirən və onlara rəhbərlik edən peşəkardır.",
         "popular": true,
         "participant": false
     },
@@ -60,6 +63,7 @@
         "instructor_rating": "35",
         "instructor_students": "128",
         "instructor_courses": "22",
+        "back_detail": "Proqram təminatının inkişafının müxtəlif aspektlərində tələbələri öyrədən və istiqamətləndirən peşəkar. Onlar onlayn kurslar hazırlayır və çatdırır.",
         "popular": false,
         "participant": false
     },
@@ -76,6 +80,7 @@
         "instructor_rating": "16",
         "instructor_students": "89",
         "instructor_courses": "10",
+        "back_detail": "Onlayn təhsil veb saytı üçün CSS/HTML təlimatçısı HTML və CSS-dən istifadə edərək vebsaytların hazırlanmasında tələbələri öyrədən və istiqamətləndirən peşəkardır.",
         "popular": false,
         "participant": false
     },
@@ -92,6 +97,7 @@
         "instructor_rating": "34",
         "instructor_students": "145",
         "instructor_courses": "22",
+        "back_detail": "tələbələrə eskiz sənətini öyrədən və istiqamətləndirən peşəkar. Onlar onlayn kurslar hazırlayır və çatdırır, təlim materialları yaradırlar",
         "popular": false,
         "participant": false
     },
@@ -108,6 +114,7 @@
         "instructor_rating": "23",
         "instructor_students": "104",
         "instructor_courses": "18",
+        "back_detail": "Adobe After Effects təlimatçısı hərəkətli qrafika və vizual effektlər yaratmaq üçün Adobe After Effects proqram təminatından necə istifadə etməyi öyrətmək üzrə ixtisaslaşan peşəkardır.",
         "popular": false,
         "participant": true
     },
@@ -124,6 +131,7 @@
         "instructor_rating": "37",
         "instructor_students": "267",
         "instructor_courses": "51",
+        "back_detail": "Təlimatçı video dərslər, yazılı dərslər və interaktiv tapşırıqlar daxil olmaqla, cəlbedici və məlumatlandırıcı kurs materialları yaradacaq. Onlar həmçinin kurs boyu tələbələrə rəy və dəstək verəcəklər.",
         "popular": true,
         "participant": true
     },
@@ -140,6 +148,7 @@
         "instructor_rating": "19",
         "instructor_students": "123",
         "instructor_courses": "22",
+        "back_detail": "Məntiq və tənqidi təfəkkür sahəsində təcrübəsi olan və bu fənləri onlayn kurslar vasitəsilə öyrədə bilən peşəkar. Onlar məntiqin müxtəlif sahələrində, məsələn, deduktiv əsaslandırma, arqumentasiya və.s yiyələnəcəklər",
         "popular": false,
         "participant": false
     },
@@ -156,6 +165,7 @@
         "instructor_rating": "11",
         "instructor_students": "89",
         "instructor_courses": "16",
+        "back_detail": "Veb dizayn təlimatçısı veb-saytların dizaynında təcrübəli olan və tələbələrə peşəkar görünüşlü veb dizaynlar yaratmağı öyrədə bilən peşəkardır.",
         "popular": false,
         "participant": false
     },
@@ -172,6 +182,7 @@
         "instructor_rating": "19",
         "instructor_students": "102",
         "instructor_courses": "9",
+        "back_detail": "Biznes təlimatçısı bizneslə əlaqəli mövzularda təcrübəyə malik olan və tələbələrə uğurlu biznesləri inkişaf etdirməyi və idarə etməyi öyrədə bilən peşəkardır.",
         "popular": false,
         "participant": false
     },
@@ -188,6 +199,7 @@
         "instructor_rating": "57",
         "instructor_students": "210",
         "instructor_courses": "23",
+        "back_detail": "Qrafik dizayn proqramında təcrübəli olan və tələbələrə müxtəlif məqsədlər üçün vizual cəlbedici dizaynlar yaratmağı öyrədə bilən peşəkar.",
         "popular": true,
         "participant": false
     }

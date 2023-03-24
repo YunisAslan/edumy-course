@@ -17,7 +17,7 @@ const BlogListContainer = () => {
         <>
             <div className='blog-list-container'>
 
-                <div className='blog-list-featured pt-16'>
+                <div className='blog-list-featured pt-16 text-myBlack'>
 
                     <h2 className='text-center font-[500] text-[1.7rem]'>Yeni Bloqlar</h2>
 

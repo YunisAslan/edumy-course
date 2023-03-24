@@ -14,19 +14,19 @@ const SignIn = () => {
 
     return (
         <>
-            <div className='login-box mt-[7rem] flex items-center justify-center inset-0'>
+            <div className='login-box mt-[10rem] flex items-center justify-center inset-0'>
 
                 <SignSVG className="sign-wave"/>
 
                 <button
                     onClick={() => navigate('/')}
-                    className='return-home-btn fixed z-10 left-5 top-5 p-3 rounded-full bg-gray-100'
+                    className='return-home-btn fixed z-10 mm:left-3 sm:left-5 top-5 p-3 rounded-full bg-gray-100'
                     title='Return Home'
                 >
-                    <FaGraduationCap className='pointer-events-none text-premiumColor/100 text-[2.3rem]' />
+                    <FaGraduationCap className='pointer-events-none text-premiumColor/100 mm:text-[1.7rem] sm:text-[2.3rem]' />
                 </button>
 
-                <div className='z-10 fixed right-5 top-5'>
+                <div className='z-10 fixed right-5 top-5 mm:w-[35px] sm:w-[50px]'>
                     <img src={headerLogo} alt="" />
                 </div>
 

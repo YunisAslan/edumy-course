@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { motion } from 'framer-motion'
 import CustomRadioBox from '../main/CustomRadioBox';
 
-const RatingContainer = ({rating_head,child_radio_title1,child_radio_title2,child_radio_title3,child_radio_title4,child_radio_title5,child_radio_title6,child_radio_title7,child_radio_title8,child_radio_title9}) => {
+const RatingContainer = ({rating_head,child_radio_title1,child_radio_title2,child_radio_title3,child_radio_title4,child_radio_title5}) => {
 
     const ratingAreaRef = useRef();
     const [filterOption, setfilterOption] = useState(false);
@@ -25,14 +25,13 @@ const RatingContainer = ({rating_head,child_radio_title1,child_radio_title2,chil
 
     return (
         <>
-            <div className='rating-container shadow-customShadow rounded-md 
-                        w-[100%] h-[220px] py-2 pl-3 border-[1px] border-gray-200 transition-[height] duration-[.6s] mb-8'
+            <div className='rating-container shadow-barShadow rounded-md w-[100%] h-[220px] py-2 pl-3 border-[0px]  transition-[height] duration-[.6s] mb-8 bg-softBlue'
                 ref={ratingAreaRef}>
 
                 <button
                     className='arrow-btn flex items-center pb-2'
                     onClick={handleFilterbox}>
-                    <span className='pointer-events-none font-[700]'>{rating_head}</span>
+                    <span className='pointer-events-none font-[500] text-myBlack'>{rating_head}</span>
 
                     {!filterOption ?
                         <IoIosArrowDown
@@ -51,7 +50,7 @@ const RatingContainer = ({rating_head,child_radio_title1,child_radio_title2,chil
                         transition={{ duration: .6 }}
                         layout
                     >
-                        <div className="radio-boxes">
+                        <div className="radio-boxes text-myBlack font-[500]">
 
                             <CustomRadioBox radio_title={child_radio_title1} selectedOption={selectedOption} setSelectedOption={setSelectedOption} handleOptionChange={handleOptionChange} />
 

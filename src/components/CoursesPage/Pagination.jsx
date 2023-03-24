@@ -19,8 +19,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, setCurren
             setActivePage(activePage - 1)
         }
         if (e.target.classList.contains('next-btn') && currentPage <= 1) {
-            setCurrentPage(currentPage + 1)
-            setActivePage(activePage + 1)
+            setCurrentPage(currentPage + 1) //page
+            setActivePage(activePage + 1) //just btn
         }
     }
 
@@ -31,7 +31,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, setCurren
 
                 <ul className="pagination flex justify-center items-center space-x-2">
                     <button onClick={handleNextClick} className='prev-btn' disabled={currentPage === 1}>
-                        <BsChevronDoubleLeft className='text-premiumColor pointer-events-none' />
+                        <BsChevronDoubleLeft className='text-premiumColor/100 pointer-events-none' />
                     </button>
 
                     {pageNumbers.map((number) => (
@@ -49,7 +49,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, setCurren
                     <button className='next-btn'
                         onClick={handleNextClick}
                         disabled={totalPosts / postsPerPage === currentPage}>
-                        <BsChevronDoubleRight className=' text-premiumColor pointer-events-none' />
+                        <BsChevronDoubleRight className=' text-premiumColor/100 pointer-events-none' />
                     </button>
                 </ul>
 

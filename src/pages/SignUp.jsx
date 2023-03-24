@@ -14,7 +14,7 @@ const SignUp = () => {
 
     return (
         <>
-            <div className="account-box-register flex mt-[3.5rem] justify-center" >
+            <div className="account-box-register flex mm:mt-[13rem] sm:mt-[3rem] justify-center" >
 
                 <SignSVG className="sign-wave"/>
 
@@ -26,7 +26,7 @@ const SignUp = () => {
                     <FaGraduationCap className='pointer-events-none text-premiumColor/100 text-[2.3rem]' />
                 </button>
 
-                <div className='z-10 fixed right-5 top-5'>
+                <div className='z-10 fixed right-5 top-5 w-[50px]'>
                     <img src={headerLogo} alt="" />
                 </div>
 

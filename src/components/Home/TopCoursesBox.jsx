@@ -33,7 +33,7 @@ const TopCoursesBox = ({ ...post }) => {
 
                     <div className='relative' >
 
-                        <img src={post.post_img} alt="" className='rounded-[4px] w-full' />
+                        <img src={post.post_img} alt="" className='rounded-[4px] w-full h-[205px]' />
                         <AnimatePresence>
                             {showOverlay && (
                                 <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} 
@@ -79,7 +79,7 @@ const TopCoursesBox = ({ ...post }) => {
                         </span>
                     </div>
 
-                    <div className="comment-price flex items-center pt-2 px-3 justify-between border-t-[1px] border-gray-300">
+                    <div className="comment-price flex items-center pt-3 px-3 justify-between border-t-[1px] border-gray-300">
 
                         <span className='flex items-center'>
                             <RxPerson className='mr-1 text-[1.5rem] text-slate-600' /> <span className='text-[1.1rem] text-slate-600'>{post.post_participant}</span>

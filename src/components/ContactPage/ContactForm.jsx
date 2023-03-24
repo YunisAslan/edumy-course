@@ -61,7 +61,7 @@ const ContactForm = () => {
     <>
       <div className='contact-form-container'>
 
-        <h2 className='pb-1 text-2xl'>Bizə Mesaj Göndərin</h2>
+        <h2 className='pb-1 text-2xl text-myBlack'>Bizə Mesaj Göndərin</h2>
         <p className='pb-2 text-gray-500 mm:text-xs sm:text-base'>Mesajınız bizim üçün vacib əhəmiyyət daşıyır</p>
 
         <form className='contact-form mm:full mm:flex-col mm:flex mm:justify-center md:w-[700px]' 

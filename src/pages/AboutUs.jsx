@@ -5,7 +5,7 @@ import PagesTop from '../components/main/PagesTop'
 const AboutUs = () => {
   return (
     <>
-      <PagesTop current_page="Haqqımızda" main_page="Səhifələr" />
+      <PagesTop current_page="Haqqımızda" main_page="Ana Səhifə" />
 
       <AboutUsContainer />
     </>

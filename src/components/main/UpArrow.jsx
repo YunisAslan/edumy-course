@@ -32,13 +32,11 @@ const UpArrow = () => {
         });
     };
 
-
-
     return (
         <>
 
             {isVisible && (
-                <button className="scroll-to-top-btn text-[1.5rem] right-4 bottom-4 p-2 font-[700] fixed rounded-full z-50 bg-white text-black" 
+                <button className="scroll-to-top-btn text-[1.5rem] right-4 bottom-4 p-2 font-[700] fixed rounded-full z-50 bg-white text-myBlack shadow-dropdownShadow" 
                 onClick={scrollToTop}>
                     <BsArrowUp />
                 </button>

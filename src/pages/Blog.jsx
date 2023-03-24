@@ -5,7 +5,7 @@ import PagesTop from '../components/main/PagesTop'
 const Blog = () => {
     return (
         <>
-            <PagesTop main_page="Blog" current_page="Blog" />
+            <PagesTop main_page="Ana Səhifə" current_page="Blog" />
             <SingleBlogContainer />
         </>
     )

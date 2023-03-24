@@ -11,7 +11,7 @@ import ShareLinks from '../main/ShareLinks'
 const SingleBlogContainer = () => {
     return (
         <>
-            <div className="single-blog-container grid grid-cols-12 pt-24 px-6">
+            <div className="single-blog-container grid grid-cols-12 pt-24 px-6 text-myBlack">
 
                 <div className="single-blog-container-left xl:col-span-9 mm:col-span-12 xl:pr-6 mm:pr-0">
                     {BlogPostInfo.map(onePost => (
@@ -19,32 +19,34 @@ const SingleBlogContainer = () => {
                         <BlogPostCard key={onePost.id} {...onePost} />
                     ))}
 
-                    <div className="event-desc pt-0 pr-4">
-                        <h2 className='pb-3 font-[500] text-[1.4rem]'>EVENT</h2>
-                        <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio doloremque cupiditate adipisci veniam. Incidunt placeat natus nihil quo, ex, itaque possimus, sunt doloremque perferendis repellendus quod commodi accusantium vitae quos.</p>
-                        <p className='pt-3 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam aliquam nulla eligendi minus quisquam cumque quos ratione, error rerum?</p>
+                    <div className="event-desc pt-0 pr-4 mm:text-center sm:text-left">
+                        <h2 className='pb-3 font-[500] text-[1.4rem]'>Bloq</h2>
+                        <p className='mm:text-center sm:text-justify'>Dünya daha çox rəqəmsallaşmış bir dövrə doğru dəyişməyə davam etdikcə, onlayn təhsil həm fərdlər, həm də bizneslər üçün getdikcə populyarlaşır. Əslində, bir çox müəssisələr öz işçilərinin bacarıq və biliklərini təkmilləşdirmək yolu kimi onlayn təhsilə müraciət ediblər və nəticədə bütövlükdə şirkət üçün daha böyük uğura gətirib çıxarır.
+                        </p>
+                        <p className='pt-3 mm:text-center sm:text-justify'>İlkin olaraq, onlayn təhsil öz işçilərinin bacarıqlarını artırmaq istəyən müəssisələr üçün sərfəli həll yoludur.</p>
                     </div>
 
                     <div className="event-content pt-6">
-                        <h2 className='font-[500] pb-3 text-[1.4rem]'>Event Content</h2>
+                        <h2 className='font-[500] pb-3 text-[1.4rem] mm:text-center sm:text-left'>Biznes Müvəffəqiyyəti üçün Onlayn Təhsilin Faydaları</h2>
 
                         <ul className='list-titles pl-4'>
-                            <li>You will need a copy of Adobe XD 2019 or above. A free trial can b</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, blanditiis.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi </li>
+                            <li>Onlayn öyrənmə məşğul peşəkarlar üçün çevikdir üsuldur. </li>
+                            <li>Fərdiləşdirilə bilən öyrənmə təcrübəsi təqdim edilir.</li>
+                            <li>Onlayn təhsil müəssisələr üçün sərfəlidir.</li>
+                        
                         </ul>
                     </div>
 
-                    <blockquote className='ml-10'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <blockquote className='mm:ml-4 sm:ml-10'>
+                    "Onlayn təhsil öyrənmə və bilik əldə etməyimizdə inqilab etdi. Rəqəmsal texnologiya və internetin yüksəlişi ilə təhsil dünyası əvvəlkindən daha əlçatan, qənaətcil və çevik oldu. Bizneslər getdikcə daha çox onlayn təhsilə üz tuturlar. işçilərinin bacarıqlarını artırmaq və daha böyük uğur və böyümə əldə etmək üçün bir yoldur."
                     </blockquote>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fuga consectetur adipisci voluptate pariatur laboriosam iure amet atque esse magni. <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neque aperiam porro. Quod adipisci itaque ex odio eos saepe harum.
+                    <p className='mm:text-center sm:text-left'>
+                    Onlayn təhsilin faydaları yalnız xərc və rahatlıqdanda kənara çıxır. O, həmçinin işçilər üçün daha fərdiləşdirilmiş və cəlbedici öyrənmə təcrübəsi təmin edə bilər ki, bu da motivasiyanın artmasına və saxlanmasına səbəb olur. <br /> <br /> İstər onlayn təhsil platformaları, istər vebinarlar, istərsə də virtual konfranslar vasitəsilə onlayn təhsil müasir sürətlə inkişaf edən və daim inkişaf edən bazarda rəqabətədavamlı qalmaq istəyən bizneslər üçün dəyərli bir vasitə olduğunu sübut etdi.
                     </p>
 
                     <div className='share-links flex items-center pt-6'>
-                        <span className='text-[1.3rem]'>Share: </span>
+                        <span className='text-[1.3rem] text-myBlack'>Paylaş: </span>
 
                         <ShareLinks className="event-share text-black flex items-center space-x-3 text-[1.3rem] pl-3" />
                     </div>

@@ -5,7 +5,7 @@ import PagesTop from '../components/main/PagesTop'
 const Courses = () => {
     return (
         <>
-            <PagesTop main_page="Kurslar" current_page="Kurslar"/>
+            <PagesTop main_page="Ana Səhifə" current_page="Kurslar"/>
             <CoursesContainer />
         </>
 

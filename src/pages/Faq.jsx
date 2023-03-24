@@ -6,7 +6,7 @@ import PagesTop from '../components/main/PagesTop'
 const Faq = () => {
     return (
         <>
-            <PagesTop main_page="Səhifələr"  current_page="Faq"/>
+            <PagesTop main_page="Ana Səhifə"  current_page="Faq"/>
 
             <FaqContainer />
         </>

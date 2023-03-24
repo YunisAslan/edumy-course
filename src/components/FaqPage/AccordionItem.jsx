@@ -16,7 +16,7 @@ const AccordionItem = ({ faq_answer, faq_question }) => {
                     className="accordion-head cursor-pointer text-premiumColor/100 font-[700] flex justify-between relative"
                     onClick={() => setIsActive(!isActive)}>
 
-                    <h2 className="accordion-question mm:text-[1rem] lg:text-[1.5rem]">{faq_question}</h2>
+                    <h2 className="accordion-question mm:text-[1.2rem] lg:text-[1.5rem]">{faq_question}</h2>
                     <span>
                         {isActive
                             ? <BsChevronDown className='rotate-[360deg] transition-all duration-[.8s] text-[1.2rem]' />

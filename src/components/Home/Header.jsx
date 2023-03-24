@@ -1,4 +1,4 @@
-import React,{ useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Button from '../main/Button';
 
@@ -6,7 +6,7 @@ import Button from '../main/Button';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Parallax, Navigation, EffectCreative } from "swiper";
+import { Parallax, Navigation, Autoplay } from "swiper";
 
 // images or logos
 import headerImg1 from '../../assets/images/header-img-1.jpg'
@@ -20,52 +20,48 @@ import hicon4 from '../../assets/images/hicon4.png'
 
 const Header = () => {
 
-    // const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(false);
 
-    // useEffect(() => {
-    //     window.scrollTo({
-    //         top: 900, // change this value to adjust the scrolling distance
-    //         behavior: 'smooth', // this makes the scrolling animation smooth
-    //     });
-
-    // }, [clicked]);
+    useEffect(() => {
+        if (clicked) {
+            window.scrollTo({
+                top: 1800,
+                behavior: 'smooth'
+            });
+        }
+    }, [clicked]);
 
 
     return (
         <>
-            <header>
+            <header className='relative inset-0'>
 
                 <Swiper
                     style={{
                         "--swiper-navigation-color": "#fff"
                     }}
-                    speed={2000}
-                    // parallax={true}
+                    speed={800}
+                    parallax={{
+                        effect: true
+                    }}
                     navigation={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     loop={true}
-                    modules={[Parallax, Navigation, EffectCreative]}
-                    // effect={"creative"}
-                    // creativeEffect={{
-                    //     prev: {
-                    //         shadow: true,
-                    //         translate: ["-120%", 0, -500],
-                    //     },
-                    //     next: {
-                    //         shadow: true,
-                    //         translate: ["120%", 0, -500],
-                    //     },
-                    // }}
-
-                    className="mySwiper"
+                    modules={[Parallax, Navigation, Autoplay]}
+                    className="mySwiper header-swiper"
                 >
 
                     <SwiperSlide className='slide' style={{ backgroundImage: `url(${headerImg1})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: 'cover', height: "90vh", width: "100vw" }}>
                         <div className='header-content'>
-                            <h2 className='lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase mm:px-3 lg:px-0'>Özünü təhsil resursları və məlumatları</h2>
+                            <h2 className='lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase mm:px-3 lg:px-0'>Özünü təhsİl resursları və məlumatları</h2>
                             <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
                                 Texnologiya böyük bir təkamül dalğası gətirir
                             </h6>
-                            <Button btnText="Başlamağa Hazırsız ?" classname="my-custom-btn header-btn" />
+
+                            <Button onClick={() => setClicked(!clicked)} btnText="Başlamağa Hazırsız ?" classname="my-custom-btn header-btn" />
                         </div>
                     </SwiperSlide>
 
@@ -77,25 +73,25 @@ const Header = () => {
                             <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
                                 Bu kurslar sizə real keyfiyyət təqdim edəcək
                             </h6>
-                            <Button btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />
+                            <Button onClick={() => setClicked(!clicked)} btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide className='slide' style={{ backgroundImage: `url(${headerImg3})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: 'cover', height: "90vh", width: "100vw" }}>
                         <div className='header-content'>
-                            <h2 className='z-[44] lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Lorem ipsum</h2>
+                            <h2 className='z-[44] lg:text-[2.6rem] sm:text-[2.2rem] mm:text-[1.5rem] pb-1 font-[700] uppercase'>Potensİalınızı Kəşf edİn</h2>
                             <h6 className='z-[44] sm:text-[1.2rem] mm:text-[1rem]  lg:w-full sm:w-[400px] mm:w-[300px] pb-5'>
-                                lorem
+                                Ən yaxşı onlayn öyrənmə təcrübəsi
                             </h6>
-                            <Button btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />
+                            <Button onClick={() => setClicked(!clicked)} btnText="Başlamağa hazırsız ?" classname="my-custom-btn header-btn" />
                         </div>
                     </SwiperSlide>
 
                 </Swiper>
 
-                
 
-                <div className='z-[2] absolute left-10 bottom-28 mm:hidden lg:flex space-x-20 items-center text-white'>
+
+                <div className='z-[2] absolute left-10 bottom-10 mm:hidden lg:flex space-x-20 items-center text-white'>
                     <div className='hover:-translate-y-2 transition-transform duration-700 cursor-pointer hover:brightness-75'>
                         <img src={hicon1} alt="" className='mb-2' />
                         <span>Mütəxəssislərdən öyrənin</span>
