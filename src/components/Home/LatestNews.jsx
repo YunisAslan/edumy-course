@@ -16,9 +16,15 @@ const LatestNews = () => {
         <>
             <section className="latest-news pb-32">
 
-                    <div className="news-head text-myBlack text-center px-6 pb-10">
-                    <h2 className='text-[1.7rem] font-[600] pb-1 capitalize'>Ən son xəbərlər</h2>
-                    <h6 className='font-[500]'>Ən son baş vermiş hadisələrdən xəbərdar olun</h6>
+                <div className="news-head text-myBlack text-center px-6 pb-10">
+                    <h2 className='text-[1.7rem] font-[600] pb-1 capitalize'
+                        data-aos="fade-in"
+                        data-aos-easing="ease-in-out"
+                        data-aos-duration="1200">Ən son xəbərlər</h2>
+                    <h6 className='font-[500]'
+                        data-aos="fade-in"
+                        data-aos-easing="ease-in-out"
+                        data-aos-duration="1400">Ən son baş vermiş hadisələrdən xəbərdar olun</h6>
                 </div>
 
                 <div className="latest-news-containers px-10 grid mm:grid-cols-1 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-12 gap-4">
@@ -103,7 +109,6 @@ const LatestNews = () => {
                             </SwiperSlide>
 
                         </Swiper>
-
 
                     </div>
 

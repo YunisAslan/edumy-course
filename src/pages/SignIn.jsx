@@ -9,6 +9,10 @@ import SignInForm from '../components/SignPage/SignInForm';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     const navigate = useNavigate();
 
@@ -20,13 +24,13 @@ const SignIn = () => {
 
                 <button
                     onClick={() => navigate('/')}
-                    className='return-home-btn fixed z-10 mm:left-3 sm:left-5 top-5 p-3 rounded-full bg-gray-100'
+                    className='return-home-btn mm:hidden sm:block sm:fixed z-10 sm:left-5 top-5 p-3 rounded-full bg-gray-100'
                     title='Return Home'
                 >
                     <FaGraduationCap className='pointer-events-none text-premiumColor/100 mm:text-[1.7rem] sm:text-[2.3rem]' />
                 </button>
 
-                <div className='z-10 fixed right-5 top-5 mm:w-[35px] sm:w-[50px]'>
+                <div className='z-10 mm:hidden sm:block sm:fixed right-5 top-5'>
                     <img src={headerLogo} alt="" />
                 </div>
 

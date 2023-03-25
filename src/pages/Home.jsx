@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 
 // HOME COMPONENTS
 import Header from '../components/Home/Header'
@@ -10,6 +10,11 @@ import DownloadEnjoy from '../components/Home/DownloadEnjoy'
 import OurPartners from '../components/Home/OurPartners'
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Header />

@@ -3,7 +3,7 @@ import Footer from "./components/main/Footer";
 import UpArrow from "./components/main/UpArrow";
 
 // ROUTING
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 //PAGES
 import Home from "./pages/Home";
@@ -24,10 +24,15 @@ import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/NotFound";
 import CookieNotification from "./components/main/CookieNotification";
 
-function App() {
+// AOS animations
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
+function App() {
   return (
     <>
+
       <Router>
 
         <Navbar />
@@ -46,13 +51,12 @@ function App() {
           <Route path="/bloglist" element={<BlogList />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          <Route exact path="*" element={<NotFound />} />
         </Routes>
 
         <UpArrow />
         <Footer />
-
-        {/* <CookieNotification /> */}
+        <CookieNotification />
 
       </Router>
     </>

@@ -40,18 +40,18 @@ const InstructorsCard = ({ ...oneInstructor }) => {
                             </span> */}
                         </div>
 
-                            <div className='border-t-[2px] border-premiumColor w-full mt-8'></div>
+                        <div className='border-t-[2px] border-premiumColor w-full mt-8'></div>
 
-                            <div className="instructor-infos text-myBlack font-[500] pb-1 h-full w-full flex justify-between items-center space-x-5">
-                                <span>{oneInstructor.instructor_students} şagird</span>
-                                <span>{oneInstructor.instructor_courses} kurs</span>
-                            </div>
+                        <div className="instructor-infos text-myBlack font-[500] pb-1 h-full w-full flex justify-between items-center space-x-5">
+                            <span>{oneInstructor.instructor_students} şagird</span>
+                            <span>{oneInstructor.instructor_courses} kurs</span>
+                        </div>
                     </div>
 
                     <div className="flip-card__back flex flex-col items-center justify-end pb-16 px-4 text-myBlack absolute bottom-0 bg-softBlue h-full rounded-[.6rem] border-0 py-10">
-                        <img src={educaIcon} alt="" className='w-24 flex items-cetner'/>
+                        <img src={educaIcon} alt="" className='w-24 flex items-cetner' />
                         <h2 className='text-lg pb-2'>{oneInstructor.instructor_name}</h2>
-                        <p className='text-sm'>{oneInstructor.back_detail}</p> 
+                        <p className='text-sm'>{oneInstructor.back_detail}</p>
                     </div>
 
                 </div>

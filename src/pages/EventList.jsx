@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import PagesTop from '../components/main/PagesTop'
 import EventsCard from '../components/EventsPage/EventsCard'
 import Pagination from '../components/CoursesPage/Pagination'
 
 import EventsInfo from '../JSONs/EventsInfo.json'
-import { useEffect } from 'react'
+
 
 const EventList = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     const [events, setEvents] = useState(EventsInfo)
     const [currentPage, setCurrentPage] = useState(1)
@@ -17,14 +21,6 @@ const EventList = () => {
     const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost)
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
-
-    useEffect(() => {
-        window.scroll({
-            top: 440,
-            left: 0,
-            behavior: "smooth"
-        })
-    }, [])
 
     return (
         <>

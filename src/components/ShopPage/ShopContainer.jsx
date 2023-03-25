@@ -102,9 +102,9 @@ const ShopContainer = () => {
                                         <em>Heç biri</em>
                                     </MenuItem>
 
-                                    <MenuItem value="ascending">Artan sıra</MenuItem>
+                                    <MenuItem value="ascending">Ucuzdan bahaya</MenuItem>
 
-                                    <MenuItem value="descending">Azalan sıra</MenuItem>
+                                    <MenuItem value="descending">Bahadan ucuza</MenuItem>
                                 </Select>
                             </FormControl>
                         </div>

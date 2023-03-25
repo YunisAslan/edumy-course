@@ -19,9 +19,12 @@ const OurPartners = () => {
         <>
             <section className='our-partners pb-28'>
 
-                <h2 className='font-[600] text-[1.7rem] text-myBlack pb-8 text-center'>Əməkdaşlıqlar</h2>
+                <h2 className='font-[600] text-[1.7rem] text-myBlack pb-8 text-center'
+                    data-aos="fade"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="800">Əməkdaşlıqlar</h2>
 
-                <Marquee direction='right' speed={140} pauseOnClick	gradientColor={false}>
+                <Marquee direction='right' speed={140} pauseOnClick gradientColor={false}>
                     <div className='flex items-center'>
                         <Partner imageUrl={partner1} />
                         <Partner imageUrl={partner2} />

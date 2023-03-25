@@ -16,8 +16,6 @@ const PagesTop = ({ main_page, current_page }) => {
                     height: "65vh"
                 }}
             >
-
-
                 <div className="pages-top-titles absolute flex-col text-white  flex justify-center items-center w-[100%] h-[100%] pt-[2rem]">
                     {/* <span className='text-[1.4rem]'>{main_page} / {current_page}</span> */}
                     <Typed className='mm:text-3xl mm:px-6 sm:text-4xl md:text-6xl font-zillaFont font-[600] -tracking-tighter'

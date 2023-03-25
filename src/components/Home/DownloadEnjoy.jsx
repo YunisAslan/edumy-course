@@ -15,8 +15,14 @@ const DownloadEnjoy = () => {
             }}>
 
                 <div className="download-container flex flex-col justify-center h-full px-10 text-white absolute">
-                    <h2 className='capitalize font-[500] text-[2rem] pb-1'>Yükləyin & həzz alın</h2>
-                    <p className='pb-9'>
+                    <h2 className='capitalize font-[500] text-[2rem] pb-1'
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000">Yükləyin & həzz alın</h2>
+                    <p className='pb-9'
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="1400">
                         İstənilən yerdə, istədiyiniz zaman kurslarınıza daxil olun <br /> və təcrübə testlərindən keçərək, hazır olun.
                     </p>
 

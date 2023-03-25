@@ -73,13 +73,13 @@ const CoursesContainer = () => {
     };
 
     useEffect(() => {
-        if (currentPage) {
-            window.scroll({
-                top: 500,
-                left: 0,
-                behavior: 'smooth'
-            })
-        }
+
+        window.scroll({
+            top: 500,
+            left: 0,
+            behavior: 'smooth'
+        })
+
     }, [currentPage])
 
     return (
@@ -112,9 +112,9 @@ const CoursesContainer = () => {
                                         <em>Heç biri</em>
                                     </MenuItem>
 
-                                    <MenuItem value="ascending">Artan sıra</MenuItem>
+                                    <MenuItem value="ascending">Ucuzdan bahaya</MenuItem>
 
-                                    <MenuItem value="descending">Azalan sıra</MenuItem>
+                                    <MenuItem value="descending">Bahadan ucuza</MenuItem>
                                 </Select>
                             </FormControl>
                         </div>

@@ -5,15 +5,14 @@ import { RxPerson, RxCross1 } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { motion } from 'framer-motion';
 
-import { FaOpencart } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import headerLogoNew from '../../assets/images/header-logo-blue.png'
 import Basket from '../main/AddBasket';
 
 const NavbarContainer = () => {
 
-    const [stickyNav, setStickyNav] = useState(false);
     const navigate = useNavigate()
+    const [stickyNav, setStickyNav] = useState(false);
     const [dropLink, setDropLink] = useState(null);
 
     const searchInputRef = useRef();
@@ -27,33 +26,52 @@ const NavbarContainer = () => {
         }
     }
 
-    const getSticky = () => {
-        if (window.scrollY >= 200) {
-            setStickyNav(true)
-        } else {
-            setStickyNav(false)
-        }
-    }
-    window.addEventListener('scroll', getSticky)
+    // const getSticky = () => {
+    //     if (window.scrollY >= 300) {
+    //         setStickyNav(true)
+    //     } else {
+    //         setStickyNav(false)
+    //     }
+    // }
+    // window.addEventListener('scroll', getSticky);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= 300) {
+                setStickyNav(true)
+            } else {
+                setStickyNav(false)
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>
-            <div className={`${stickyNav ? "navbar sticky-nav" : "navbar"}`}>
+            <motion.div className={`${stickyNav ? "navbar sticky-nav" : "navbar"}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: .4 }}
 
+            >
                 <div className="navbar-logo flex items-center pr-9">
                     <img src={headerLogoNew} alt="" />
                 </div>
 
                 <nav className='flex justify-center items-center gap-8 flex-1 text-[20px] pr-8 font-[500] xl:flex mm:hidden'>
 
-                    <Link to='/' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700
-                    after:bg-gradient-to-t after:from-premiumColor/80 after:shadow-barShadow after:to-[#e0e2e6] after:rounded-full after:w-4 after:h-4 after:absolute after:-left-4 after:top-3'>
+                    <Link to='/' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s]
+                    after:bg-gradient-to-t after:from-premiumColor/80 after:shadow-barShadow after:to-[#e0e2e6] after:rounded-full after:w-4 after:h-4 after:absolute after:-left-4 after:top-3 jump-ball'>
                         Ana Səhifə
                     </Link>
 
                     <div className='relative' onMouseEnter={() => setDropLink(1)} onMouseLeave={() => setDropLink(null)}>
 
-                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0  before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700' >
+                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0  before:bottom-3 before:w-0 before:hover:w-full before:transition-all 
+                        before:duration-[.4s'>
                             <span className='flex items-center'> Kurslar <RiArrowDropDownLine /> </span>
                         </button>
 
@@ -81,7 +99,7 @@ const NavbarContainer = () => {
 
                     <div className='relative' onMouseEnter={() => setDropLink(2)} onMouseLeave={() => setDropLink(null)}>
 
-                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700'>
+                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s'>
                             <span className='flex items-center'> Tədbirlər <RiArrowDropDownLine /></span>
                         </button>
 
@@ -105,7 +123,7 @@ const NavbarContainer = () => {
 
                     <div className='relative' onMouseEnter={() => setDropLink(3)} onMouseLeave={() => setDropLink(null)}>
 
-                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700'>
+                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s]'>
                             <span className='flex items-center'> Səhifələr <RiArrowDropDownLine /> </span>
                         </button>
 
@@ -137,7 +155,7 @@ const NavbarContainer = () => {
 
                     <div className='relative' onMouseEnter={() => setDropLink(4)} onMouseLeave={() => setDropLink(null)}>
 
-                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700'>
+                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s]'>
                             <span className='flex items-center'> Bloq <RiArrowDropDownLine /> </span>
                         </button>
 
@@ -159,12 +177,12 @@ const NavbarContainer = () => {
 
                     </div>
 
-                    <Link to='/contact' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-700'>Əlaqə</Link>
+                    <Link to='/contact' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s]'>Əlaqə</Link>
                 </nav>
 
                 <div className="navbar-right flex items-center">
 
-                    <button className='home-sign-btn bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-500 flex items-center px-3 py-2 mr-[2rem] rounded-md  mm:hidden xl:flex'
+                    <button className='home-sign-btn bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-3000 flex items-center px-3 py-2 mr-[2rem] rounded-md  mm:hidden xl:flex'
                         onClick={() => navigate('/signin')}>
                         <RxPerson className='pointer-events-none text-[1.4rem]' />
                         <span className='pl-2'>Daxil ol</span>
@@ -187,13 +205,13 @@ const NavbarContainer = () => {
                                 placeholder='Nə axtarırsınız ?' />
                         </div>
 
-                        <button className='search-btn text-[1.8rem] pl-5 xl:pr-0 mm:pr-6' onClick={handleSearch}>
+                        <button className='search-btn text-[1.8rem] pl-5 xl:pr-0 mm:pr-6' onClick={handleSearch}   >
                             <BsSearch className='pointer-events-none' />
                         </button>
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -1,7 +1,14 @@
 import React from 'react'
 import SignSVG from '../components/main/SignSVG'
 
+
 const NotFound = () => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+
     return (
         <>
             <SignSVG className="notfound-wave"/>

@@ -9,6 +9,9 @@ import { useNavigate } from 'react-router-dom'
 import SignUpForm from '../components/SignPage/SignUpForm';
 
 const SignUp = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const navigate = useNavigate();
 
@@ -16,17 +19,17 @@ const SignUp = () => {
         <>
             <div className="account-box-register flex mm:mt-[13rem] sm:mt-[3rem] justify-center" >
 
-                <SignSVG className="sign-wave"/>
+                <SignSVG className="sign-wave" />
 
                 <button
                     onClick={() => navigate('/')}
-                    className='return-home-btn fixed z-10 left-5 top-5 p-3 rounded-full bg-gray-100'
+                    className='return-home-btn mm:hidden sm:block sm:fixed z-10 left-5 top-5 p-3 rounded-full bg-gray-100'
                     title='Return Home'
                 >
                     <FaGraduationCap className='pointer-events-none text-premiumColor/100 text-[2.3rem]' />
                 </button>
 
-                <div className='z-10 fixed right-5 top-5 w-[50px]'>
+                <div className='z-10 mm:hidden sm:block sm:fixed right-5 top-5 w-[50px]'>
                     <img src={headerLogo} alt="" />
                 </div>
 
@@ -49,7 +52,7 @@ const SignUp = () => {
                         </button>
                     </div>
 
-                    <div className="box-form" style={{ height: '570px'}}>
+                    <div className="box-form" style={{ height: '570px' }}>
                         <SignUpForm />
                     </div>
                 </motion.div>

@@ -13,8 +13,14 @@ const Testimonials = () => {
             <section className="testimonials-section mb-[10rem]">
 
                 <div className="testimonial-head text-myBlack text-center pb-10 px-6">
-                    <h2 className='font-[600]  text-[1.7rem] pb-1'>İnsanlar Nə Deyir</h2>
-                    <h6 className='font-[500]'>Saytın ekspert müəllimləri dünya səviyyəli təhsil təqdim edir</h6>
+                    <h2 className='font-[600]  text-[1.7rem] pb-1'
+                        data-aos="fade"
+                        data-aos-easing="ease-in-out"
+                        data-aos-duration="800">İnsanlar Nə Deyir</h2>
+                    <h6 className='font-[500]'
+                        data-aos="fade"
+                        data-aos-easing="ease-in-out"
+                        data-aos-duration="1200">Saytın ekspert müəllimləri dünya səviyyəli təhsil təqdim edir</h6>
                 </div>
 
                 <Marquee play direction='left' speed={140} pauseOnClick gradientColor={false}>
@@ -24,7 +30,7 @@ const Testimonials = () => {
                         </div>
                     ))}
                 </Marquee>
-                
+
             </section>
         </>
     )

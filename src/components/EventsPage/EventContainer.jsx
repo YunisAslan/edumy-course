@@ -60,7 +60,11 @@ const EventContainer = () => {
                             {
                                 İnstructorsİnfo.map((oneInstructor) => (
                                     oneInstructor.participant &&
-                                    <div key={oneInstructor.instructor_id} className="flex flex-col items-center">
+                                    <div key={oneInstructor.instructor_id} className="flex flex-col items-center"
+                                        data-aos-once="true"
+                                        data-aos="fade"
+                                        data-aos-easing="ease-in-out">
+
                                         <div>
                                             <img src={oneInstructor.instructor_img} alt="" className='w-[120px] 
                                             h-[120px] rounded-full' />

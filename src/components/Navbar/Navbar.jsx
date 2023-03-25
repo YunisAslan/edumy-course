@@ -7,10 +7,8 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaOpencart } from "react-icons/fa";
 
 import { Link, useLocation } from 'react-router-dom';
-import { useNavigate, useMatch } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import NavbarContainer from './NavbarContainer';
-
-
 
 const Navbar = () => {
 
@@ -63,7 +61,7 @@ const Navbar = () => {
                 <HiBars3BottomRight className='pointer-events-none' />
             </button>
 
-            <div ref={overlayRef} className="overlay font-navbarFont !h-0 !fixed bg-gradient-to-b from-navbarGradientFrom to-[#49607a] top-0 overflow-hidden z-[52] mm:block lg:hidden">
+            <div ref={overlayRef} className="overlay font-navbarFont !h-0 !fixed bg-gradient-to-b from-navbarGradientFrom to-[#49607a] top-0 overflow-hidden z-[52] mm:block xl:hidden">
 
                 <div className='flex items-center justify-start space-x-4 pl-10 pt-10'>
                     <button

@@ -26,7 +26,7 @@ const InstructorsContainer = () => {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = InstructorsInfo.slice(indexOfFirstPost, indexOfLastPost)
 
-    console.log(currentPosts);
+
     //change page from pagination component
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
@@ -35,6 +35,11 @@ const InstructorsContainer = () => {
     useEffect(() => {
 
         setLoading(true);
+        window.scroll({
+            top: 1100,
+            left:0,
+            behaviour: 'smooth'
+        })
 
         setTimeout(() => {
             setPosts(currentPosts);
@@ -42,15 +47,9 @@ const InstructorsContainer = () => {
         }, 2000);
     }, [currentPage]);
 
-    useEffect(() => {
-        if (currentPage) {
-            window.scroll({
-                top: 1100,
-                left: 0,
-                behavior: 'smooth'
-            })
-        }
-    }, [currentPage])
+    // useEffect(() => {
+        
+    // },[currentPage])
 
     return (
         <>

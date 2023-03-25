@@ -4,6 +4,9 @@ import InstructorsContainer from '../components/CoursesPage/InstructorsContainer
 import PagesTop from '../components/main/PagesTop'
 
 const Instructors = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>
             <PagesTop current_page="Təlimçilər" main_page="Ana Səhifə" />

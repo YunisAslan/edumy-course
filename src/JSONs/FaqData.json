@@ -11,12 +11,12 @@
             {
                 "faq_id": 2,
                 "faq_question": "Necə geri ödəmə edə bilərəm ?",
-                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+                "faq_answer": "Müştərilərimiz geri ödəmələrini bizim tərəfimizdən asanlıqla ala bilərlər. Geri ödəniş üçün ən sürətli və rahat yol, ödəniş kartı ilə edilən geri ödənişdir. Xahiş edirik, geri ödəmə zamanı məhsulu ilk aldığınız şəkildə qaytarmağa diqqət edin. Əlavə suallarınız üçün bizimlə əlaqə saxlaya bilərsiniz."
             },
             {
                 "faq_id": 3,
                 "faq_question": "Hesabı necə dəyişə bilərəm ?",
-                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+                "faq_answer": "Hesabınızı dəyişdirmək üçün, 'Profilim' bölməsinə daxil olun və dəyişiklikləri edin. Hesabınızda dəyişikliklər etmək və ya məlumatlarınızı yeniləmək üçün hər hansı bir çətinliklə qarşılaşarsınızsa, bizimlə əlaqə saxlayın və kömək istəyin. Biz həmişə sizinlə birlikdəyik və sizə kömək etməkdən məmnunluq duyacağıq."
             }
         ]
     },
@@ -27,17 +27,17 @@
             {
                 "faq_id": 4,
                 "faq_question": "Necə endirim əldə etmək olar",
-                "faq_answer": "Abunəliyinizdən və düzgün ödəniş üsulundan istifadə etdiyinizdən əmin olun."
+                "faq_answer": "Bizim mağazamızda endirimlərdən yararlanmaq üçün bir neçə fərqli yol mövcuddur. Əvvəlcədən xüsusi endirim və kampaniyalarımızı izləyərək və bizim xəbərdarlıq məktublarımıza abunə olaraq yeniliklərimizdən xəbərdar olaraq, endirimlərimizdən asanlıqla istifadə edə bilərsiniz."
             },
             {
                 "faq_id": 5,
-                "faq_question": "Necə geri ödəmə edə bilərəm ?",
-                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+                "faq_question": "Hesabı necə silə bilərəm ?" ,
+                "faq_answer": "Hesabınızı silmək üçün, lütfən bizimlə əlaqə saxlayın və hesabınızın silinməsi ilə bağlı tələblərinizi bizə bildirin. Biz sizin tələblərinizə əsasən hesabınızı siləcəyik. Hesabınız silindikdən sonra, bütün məlumatlarınız silinəcək və artıq hesabınızdan istifadə edə bilməyəcəksiniz."
             },
             {
                 "faq_id": 6,
                 "faq_question": "Hesabı necə dəyişə bilərəm ?",
-                "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rerum."
+                "faq_answer": "Hesabınızdakı məlumatları dəyişdirmək üçün, lütfən 'Profilim' bölməsinə daxil olun və dəyişiklikləri edin. Burada adınızı, e-poçt ünvanınızı, parolunuzu və ünvanınızı dəyişdirə bilərsiniz. Ayrıca, hesabınızın ayarlarını dəyişdirərək e-poçt xəbərdarlıqlarını, endirimlər və məhsul təklifləri haqqında xəbərləri və s. qəbul edə bilərsiniz."
             }
         ]
     }
