@@ -47,9 +47,6 @@ const InstructorsContainer = () => {
         }, 2000);
     }, [currentPage]);
 
-    // useEffect(() => {
-        
-    // },[currentPage])
 
     return (
         <>

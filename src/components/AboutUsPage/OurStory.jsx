@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';

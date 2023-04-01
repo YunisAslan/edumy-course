@@ -137,7 +137,7 @@ const ShopContainer = () => {
                         <div className='flex justify-center'>
                             <Box sx={{ width: 300 }}>
                                 <Slider
-                                    getAriaLabel={() => 'Temperature range'}
+                                    getAriaLabel={() => 'Price range'}
                                     value={value}
                                     onChange={handleChangeSlider}
                                     valueLabelDisplay="auto"

@@ -63,7 +63,8 @@ const SelectedFilter = () => {
                                         exit={{ opacity: 0, scale: 0 }}
                                         transition={{ duration: .4 }}
                                         layout
-                                        className='bg-premiumColor/90 text-center mr-2 ml-3 text-white rounded-md text-[.8rem] mb-1 py-1 px-2 inline-block w-[100px]'>
+                                        className='bg-premiumColor/90 text-center mr-2 ml-3 text-white rounded-md 
+                                        text-[.8rem] mb-1 py-1 px-2 inline-block w-[100px]'>
                                         <li>{filter}</li>
                                     </motion.div>
                                 ))

@@ -18,7 +18,7 @@ const FaqContainer = () => {
                 <div className="faq-right-side mm:col-span-12 lg:col-span-8 mm:px-0 lg:px-6 mm:pt-10 lg:pt-0">
 
                     {FaqData.map((items) => (
-                        <Fragment key={items.id}>
+                        <div key={items.id}>
                             <div className='pb-4'>
                                 <h2 className='text-[1.5rem] pb-4'>{items.title}</h2>
 
@@ -31,7 +31,7 @@ const FaqContainer = () => {
                                     ))}
                                 </div>
                             </div>
-                        </Fragment>
+                        </div>
                     ))}
 
 

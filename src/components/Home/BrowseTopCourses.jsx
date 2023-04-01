@@ -7,7 +7,7 @@ import TopCoursesBox from './TopCoursesBox'
 const BrowseTopCourses = () => {
 
     const [posts, setPosts] = useState(topCoursesData);
-    const [filtered, setFiltered] = useState(topCoursesData);
+    const [filtered, setFiltered] = useState([]);
     const [activeCategory, setActiveCategory] = useState('');
 
     useEffect(() => {

@@ -24,22 +24,20 @@ const Header = () => {
     const [clicked, setClicked] = useState(false);
 
     useEffect(() => {
-        if (clicked) {
-            window.scrollTo({
-                top: 1800,
-                behavior: 'smooth'
-            });
-        }
+
+        window.scrollTo({
+            top: 1800,
+            behavior: 'smooth'
+        });
+
     }, [clicked]);
 
     Aos.init({
-        disable: 'scroll', // otomatik scroll özelliğini devre dışı bırakır
-        duration: 800, // animasyon süresi
-        easing: 'ease-in-out', // animasyon eğrisi
-        once: true // sadece bir kez animasyon oynatır
+        disable: 'scroll',
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
     });
-
-
 
     return (
         <>
@@ -79,7 +77,7 @@ const Header = () => {
                                 Texnologiya böyük bir təkamül dalğası gətirir
                             </h6>
 
-                            <Button onClick={() => setClicked(!clicked)} btnText="Başlamağa Hazırsız ?" classname="my-custom-btn header-btn"/>
+                            <Button onClick={() => setClicked(!clicked)} btnText="Başlamağa Hazırsız ?" classname="my-custom-btn header-btn" />
                         </div>
                     </SwiperSlide>
 
