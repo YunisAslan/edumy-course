@@ -17,11 +17,11 @@
 @layer components {
     
     .navbar {
-      @apply mm:static xl:sticky xl:top-0 text-myBlack mm:bg-softBlue xl:bg-white flex justify-between w-[100%] items-center mm:pl-9  mm:pr-14 lg:px-14 py-6 z-[8] transition-all duration-500 ease-in-out shadow-barShadow
+        @apply mm:static xl:sticky xl:top-0 text-myBlack mm:bg-softBlue xl:bg-white flex justify-between w-[100%] items-center mm:pl-9  mm:pr-14 lg:px-14 py-6 z-[8] transition-all duration-500 ease-in-out shadow-barShadow
     }
     .navbar.sticky-nav {
         @apply bg-softBlue xl:py-4 xl:pr-24 pl-9
-    } 
+    }
 
     .slide {
         @apply before:bg-premiumColor before:absolute before:w-[100%] before:h-[100%]

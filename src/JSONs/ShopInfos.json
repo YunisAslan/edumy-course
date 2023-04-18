@@ -9,7 +9,8 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "23"
+        "shop_rating": "23",
+        "quantity": 0
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "16"
+        "shop_rating": "16",
+        "quantity": 0
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "12"
+        "shop_rating": "12",
+        "quantity": 0
     },
     {
         "id": 4,
@@ -45,7 +48,8 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "15"
+        "shop_rating": "15",
+        "quantity": 0
     },
     {
         "id": 5,
@@ -57,7 +61,8 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "12"
+        "shop_rating": "12",
+        "quantity": 0
     },
     {
         "id": 6,
@@ -69,6 +74,7 @@
         "shop_star3": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star4": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651947/Course%20bg%20images%20for%20Edumy/star_3_fbc7gn.png",
         "shop_star5": "https://res.cloudinary.com/drx9zihrg/image/upload/v1678651831/Course%20bg%20images%20for%20Edumy/star_2_hpeinv.png",
-        "shop_rating": "27"
+        "shop_rating": "27",
+        "quantity": 0
     }
 ]

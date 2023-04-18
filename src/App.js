@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 // COMPONENTS
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/main/Footer";
 import UpArrow from "./components/main/UpArrow";
 import HashLoader from "react-spinners/HashLoader"; //loader effect
+import CookieNotification from "./components/main/CookieNotification";
 // ROUTING
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,17 +19,17 @@ import Faq from "./pages/Faq";
 import AboutUs from "./pages/AboutUs";
 import BlogList from "./pages/BlogList";
 import Blog from "./pages/Blog";
+import AddBasket from "./pages/AddBasket";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/NotFound";
-import CookieNotification from "./components/main/CookieNotification";
+import ComingSoon from "./components/main/ComingSoon";
+
 
 // AOS animations
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ComingSoon from "./components/main/ComingSoon";
 AOS.init();
 
 function App() {
@@ -71,6 +73,7 @@ function App() {
             <Route path="/bloglist" element={<BlogList />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/addbasket" element={<AddBasket />} />
             <Route path="/comingsoon" element={<ComingSoon />} />
             <Route exact path="*" element={<NotFound />} />
           </Routes>

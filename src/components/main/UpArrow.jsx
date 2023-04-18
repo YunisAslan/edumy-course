@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { AiOutlineRocket } from "react-icons/ai";
 import { BsArrowUp } from 'react-icons/bs';
-
-
-
 
 const UpArrow = () => {
 

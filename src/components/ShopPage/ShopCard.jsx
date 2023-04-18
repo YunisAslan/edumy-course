@@ -1,18 +1,32 @@
 import React, { useState } from 'react'
 
 import { FaOpencart } from "react-icons/fa";
-
-import { AnimatePresence, motion } from 'framer-motion';
+import { useDispatch } from 'react-redux';
+import { addBasket } from '../../redux/productSlice';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ShopCard = ({ ...oneCard }) => {
 
-    const [showHover, setShowHover] = useState(false)
+    const dispatch = useDispatch()
+
+    const notify = () => toast.success('Məhsul səbətə əlavə edildi !');
+
+    const handleClick = (oneCard) => {
+        notify();
+        dispatch(addBasket(oneCard))
+    }
 
     return (
         <>
-            <div className="shop-card bg-[#87CEEB] rounded-lg w-[300px] h-[380px] cursor-pointer shadow-barShadow hover:scale-105 transition-all duration-500 ease-linear"
-                onMouseEnter={() => setShowHover(true)} onMouseLeave={() => setShowHover(false)}
-            >
+            <div className='absolute'>
+                <ToastContainer
+                    autoClose={2000}
+                    style={{ top: '15%' }}
+                />
+            </div>
+
+            <div className="shop-card bg-[#87CEEB] rounded-lg w-[300px] h-[380px] cursor-pointer shadow-barShadow  group">
 
                 <div className="shop-image pt-3 flex justify-center items-center">
                     <img src={oneCard.shop_img} alt="" />
@@ -45,13 +59,9 @@ const ShopCard = ({ ...oneCard }) => {
                     </div>
 
                     <div className='flex pb-8 relative'>
-                        <AnimatePresence>
-                            {showHover &&
-                                <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .4, ease: 'easeInOut' }} className='bg-white text-myBlack rounded-full p-3 absolute right-3 bottom-3'>
-                                    <FaOpencart className='text-[1.8rem]' />
-                                </motion.button>
-                            }
-                        </AnimatePresence>
+                        <button onClick={() => handleClick(oneCard)} className='bg-white text-myBlack rounded-full p-3 absolute right-3 bottom-3 group-hover:scale-105 hover:scale-105 transition-all duration-500 ease-linear'>
+                            <FaOpencart className='text-[1.8rem]' />
+                        </button>
                     </div>
                 </div>
             </div>

@@ -56,7 +56,7 @@ const Navbar = () => {
     return (
         <>
 
-            <button className='bars-overlay text-myBlack absolute text-[2.5rem] z-[9]  pt-7 right-7 top-0 mm:block xl:hidden'
+            <button className='bars-overlay absolute text-myBlack  text-[2.5rem] z-[9]  pt-8 right-7 top-0 mm:block xl:hidden'
                 onClick={handleOverlay}>
                 <HiBars3BottomRight className='pointer-events-none' />
             </button>
@@ -72,12 +72,6 @@ const Navbar = () => {
                         </span>
                         <span> Daxil ol </span>
                     </button>
-
-                    <button
-                        className="flex items-center justify-center text-white">
-                        <FaOpencart className='text-3xl' />
-                    </button>
-
                 </div>
 
                 <button className='cross-overlay text-gray-100 text-[2rem] absolute right-10 top-10'

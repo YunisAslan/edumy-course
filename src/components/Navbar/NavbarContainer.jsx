@@ -7,10 +7,13 @@ import { motion } from 'framer-motion';
 
 import { BsSearch } from "react-icons/bs";
 import headerLogoNew from '../../assets/images/header-logo-blue.png'
-import Basket from '../main/AddBasket';
+import { FaOpencart } from "react-icons/fa";
+import { useDispatch, useSelector } from 'react-redux';
+import { calculateTotalItems } from '../../redux/productSlice';
 
 const NavbarContainer = () => {
 
+    const dispatch = useDispatch() //redux
     const navigate = useNavigate()
     const [stickyNav, setStickyNav] = useState(false);
     const [dropLink, setDropLink] = useState(null);
@@ -26,15 +29,6 @@ const NavbarContainer = () => {
         }
     }
 
-    // const getSticky = () => {
-    //     if (window.scrollY >= 300) {
-    //         setStickyNav(true)
-    //     } else {
-    //         setStickyNav(false)
-    //     }
-    // }
-    // window.addEventListener('scroll', getSticky);
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY >= 300) {
@@ -49,13 +43,17 @@ const NavbarContainer = () => {
         };
     }, []);
 
+    const { products, totalQuantity } = useSelector(state => state.products)
+    useEffect(() => {
+        dispatch(calculateTotalItems())
+    }, [products])
+
     return (
         <>
             <motion.div className={`${stickyNav ? "navbar sticky-nav" : "navbar"}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: .4 }}
-
             >
                 <div className="navbar-logo flex items-center pr-9">
                     <img src={headerLogoNew} alt="" />
@@ -63,15 +61,13 @@ const NavbarContainer = () => {
 
                 <nav className='flex justify-center items-center gap-8 flex-1 text-[20px] pr-8 font-[500] xl:flex mm:hidden'>
 
-                    <Link to='/' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s]
-                    after:bg-gradient-to-t after:from-premiumColor/80 after:shadow-barShadow after:to-[#e0e2e6] after:rounded-full after:w-4 after:h-4 after:absolute after:-left-4 after:top-3 jump-ball'>
+                    <Link to='/' className='nav-link py-4 relative before:absolute before:h-[2px] before:bg-myBlack left-0 before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s] after:bg-gradient-to-t after:from-premiumColor/80 after:shadow-barShadow after:to-[#e0e2e6] after:rounded-full after:w-4 after:h-4 after:absolute after:-left-4 after:top-3 jump-ball'>
                         Ana Səhifə
                     </Link>
 
                     <div className='relative' onMouseEnter={() => setDropLink(1)} onMouseLeave={() => setDropLink(null)}>
 
-                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0  before:bottom-3 before:w-0 before:hover:w-full before:transition-all 
-                        before:duration-[.4s'>
+                        <button className='nav-link py-4 flex relative before:absolute before:h-[2px] before:bg-myBlack left-0  before:bottom-3 before:w-0 before:hover:w-full before:transition-all before:duration-[.4s'>
                             <span className='flex items-center'> Kurslar <RiArrowDropDownLine /> </span>
                         </button>
 
@@ -159,7 +155,6 @@ const NavbarContainer = () => {
                             <span className='flex items-center'> Bloq <RiArrowDropDownLine /> </span>
                         </button>
 
-
                         {dropLink === 4 && (
                             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -188,10 +183,14 @@ const NavbarContainer = () => {
                         <span className='pl-2'>Daxil ol</span>
                     </button>
 
-
-                    <div className="cart mm:hidden xl:block">
-                        <Basket />
-                    </div>
+                    <button className="cart pr-2 relative" onClick={() => navigate('/addbasket')}>
+                        <FaOpencart className='text-3xl' />
+                        {products.length > 0 && (
+                            <span className='text-sm font-[600] w-6 h-6 p-1 absolute left-5 -top-3 bg-blue-300 rounded-full flex items-center justify-center'>
+                                {totalQuantity}
+                            </span>
+                        )}
+                    </button>
 
                     <div className="search">
 

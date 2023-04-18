@@ -16,7 +16,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-
 const ShopContainer = () => {
 
     const [value, setValue] = useState([20, 37]);
@@ -81,10 +80,7 @@ const ShopContainer = () => {
 
                     <div className="shop-main-left-head flex sm:flex-row mm:flex-col sm:justify-between mm:justify-center items-center pb-6">
 
-                      
-
                         <div className='flex items-center space-x-10'>
-
                             <span>{shopData.length} nəticə</span>
 
                             <span>Qiymətə görə sırala:</span>
@@ -97,7 +93,6 @@ const ShopContainer = () => {
                                     label="Sırala"
                                     onChange={handleChange}
                                 >
-
                                     <MenuItem value="">
                                         <em>Heç biri</em>
                                     </MenuItem>
