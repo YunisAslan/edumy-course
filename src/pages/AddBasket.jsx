@@ -8,6 +8,10 @@ import Button from "../components/main/Button";
 
 const AddBasket = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const dispatch = useDispatch()
     const productItems = useSelector(selectAllProducts)
 

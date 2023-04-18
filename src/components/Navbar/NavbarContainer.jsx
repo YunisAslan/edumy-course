@@ -29,19 +29,6 @@ const NavbarContainer = () => {
         }
     }
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY >= 300) {
-                setStickyNav(true)
-            } else {
-                setStickyNav(false)
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     const { products, totalQuantity } = useSelector(state => state.products)
     useEffect(() => {
@@ -50,7 +37,7 @@ const NavbarContainer = () => {
 
     return (
         <>
-            <motion.div className={`${stickyNav ? "navbar sticky-nav" : "navbar"}`}
+            <motion.div className="navbar"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: .4 }}
