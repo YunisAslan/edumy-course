@@ -5,7 +5,7 @@ import CardWave from '../../assets/images/card-wave.svg'
 const TestimonialContainer = ({ testimonial_img, testimonial_client, testimonial_name, testimonial_detail }) => {
     return (
         <>
-            <div className="relative testimonial-container flex flex-col items-center pt-12  mm:pb-10 z-[1] bg-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-2xl sm:w-[400px] sm:h-[365px] mm:w-[350px] mm:h-[330px] hover:scale-110 transition-all duration-500 cursor-pointer" >
+            <div className="relative testimonial-container flex flex-col items-center pt-12  mm:pb-10 z-[1] bg-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-2xl sm:w-[400px] sm:h-[365px] mm:w-[350px] mm:h-[330px]" >
 
                 <img src={CardWave} alt="" className='absolute top-0 rounded-lg -z-[1]' />
 

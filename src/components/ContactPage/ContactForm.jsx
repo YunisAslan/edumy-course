@@ -64,8 +64,8 @@ const ContactForm = () => {
         <h2 className='pb-1 text-2xl text-myBlack'>Bizə Mesaj Göndərin</h2>
         <p className='pb-2 text-gray-500 mm:text-xs sm:text-base'>Mesajınız bizim üçün vacib əhəmiyyət daşıyır</p>
 
-        <form className='contact-form mm:full mm:flex-col mm:flex mm:justify-center md:w-[700px]' 
-        onSubmit={formik.handleSubmit}>
+        <form className='contact-form mm:full mm:flex-col mm:flex mm:justify-center md:w-[700px]'
+          onSubmit={formik.handleSubmit}>
 
           <div className="flex flex-col">
             <label htmlFor="name" className='pb-1 text-premiumColor/100'>
@@ -179,7 +179,7 @@ const ContactForm = () => {
                 initial={{ x: "-50%", y: -30, opacity: 0 }}
                 animate={{ x: "-50%", y: 0, opacity: 1 }}
                 exit={{ x: "-50%", y: -30, opacity: 0 }}
-                transition={{ duration: .5, ease: "easeInOut" }}
+                transition={{ duration: .3, ease: "easeInOut" }}
                 unmountOnExit
               >
                 <span className='flex items-center px-2'>
@@ -188,7 +188,6 @@ const ContactForm = () => {
               </motion.div>
             }
           </AnimatePresence>
-
         </form>
       </div>
     </>

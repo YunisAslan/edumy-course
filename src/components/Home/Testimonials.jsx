@@ -23,7 +23,7 @@ const Testimonials = () => {
                         data-aos-duration="1200">Saytın ekspert müəllimləri dünya səviyyəli təhsil təqdim edir</h6>
                 </div>
 
-                <Marquee play direction='left' speed={140} pauseOnClick gradientColor={false}>
+                <Marquee play direction='left' speed={55} pauseOnClick gradientColor={false}>
                     {testimonialInfo.map((oneSlide) => (
                         <div key={oneSlide.testimonial_id} className='pr-16 py-10'>
                             <TestimonialContainer {...oneSlide} />
